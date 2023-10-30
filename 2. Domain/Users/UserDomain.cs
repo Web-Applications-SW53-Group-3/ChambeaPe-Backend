@@ -1,16 +1,19 @@
 ﻿using _2._Domain.Exceptions;
 using _3._Data.Model;
 using _3._Data.Users;
+using AutoMapper;
 
 namespace _2._Domain.Users
 {
     public class UserDomain : IUserDomain
     {
         private IUserData _userData;
+        private IMapper _mapper;
 
-        public UserDomain(IUserData userData)
+        public UserDomain(IUserData userData, IMapper mapper)
         {
             _userData = userData;
+            _mapper = mapper;
         }
 
         public async Task<bool> CreateAsync(User user)
@@ -46,7 +49,16 @@ namespace _2._Domain.Users
                 throw new PhoneNumberAlreadyExistsException();
             }
 
-            return await _userData.UpdateAsync(user, id);
+            var userToBeUpdated = await _userData.GetByIdAsync(id);
+
+            if (userToBeUpdated != null)
+            {
+                _mapper.Map(user, userToBeUpdated);
+                return await _userData.UpdateAsync(userToBeUpdated, id);
+            }
+
+            return false;
+     
         }
 
         public async Task<bool> DeleteAsync(int id)

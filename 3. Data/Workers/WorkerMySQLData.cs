@@ -54,13 +54,10 @@ namespace _3._Data.Workers
         {
             try
             {
-                var workerToBeUpdated = await _context.Workers.Where(w => w.IsActive && w.Id == id).FirstAsync();
-                if(workerToBeUpdated == null)
-                {
-                    return false;
-                }
-                workerToBeUpdated = worker;
-                _context.Workers.Update(workerToBeUpdated);
+                worker.Id = id;
+                worker.IsActive = true;
+                worker.DateUpdated = DateTime.Now;
+                _context.Workers.Update(worker);
                 await _context.SaveChangesAsync();
                 return true;
             }

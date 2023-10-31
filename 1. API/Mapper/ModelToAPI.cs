@@ -13,8 +13,9 @@ namespace _1._API.Mapper
             CreateMap<Worker, WorkerResponse>()
                 .ForMember(dest => dest.WorkerId, opt => opt.MapFrom(src => src.Id));
             CreateMap<Certificate, CertificateResponse>();
-            CreateMap<Skill, SkillsResponse>();
+            CreateMap<Skill, SkillResponse>();
             CreateMap<Portfolio, PortfolioResponse>();
+            CreateMap<Advertisement, AdvertisementResponse>();
             CreateMap<Review, ReviewResponse>();
         }
     }

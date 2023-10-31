@@ -22,8 +22,9 @@ namespace _1._API.Mapper
                 .ForMember(dest => dest.UserRole, opt => opt.MapFrom(src => src.User.UserRole))
                 .ForMember(dest => dest.HasPremium, opt => opt.MapFrom(src => src.User.HasPremium))
                 .ForMember(dest => dest.ProfilePic, opt => opt.MapFrom(src => src.User.ProfilePic));
+            CreateMap<Advertisement, AdvertisementResponse>();
             CreateMap<Certificate, CertificateResponse>();
-            CreateMap<Skill, SkillsResponse>();
+            CreateMap<Skill, SkillResponse>();
             CreateMap<Portfolio, PortfolioResponse>();
             CreateMap<Review, ReviewResponse>();
         }

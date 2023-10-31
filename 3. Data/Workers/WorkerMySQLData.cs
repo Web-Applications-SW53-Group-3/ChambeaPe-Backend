@@ -11,6 +11,11 @@ namespace _3._Data.Workers
         {
             _context = context;
         }
+        
+        public async Task<Worker?> ExistsByIdAsync(int id)
+        {
+            return await _context.Workers.FindAsync(id);
+        }
         public async Task<List<Worker>> GetAllAsync()
         {
             return await _context.Workers

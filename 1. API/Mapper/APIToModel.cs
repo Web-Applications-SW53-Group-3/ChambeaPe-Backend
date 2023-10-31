@@ -13,6 +13,10 @@ namespace _1._API.Mapper
             CreateMap<WorkerRequest, UserRequest>();
             CreateMap<User, User>();
             CreateMap<Worker, Worker>();
+            CreateMap<AdvertisementRequest, Advertisement>();
+            CreateMap<CertificateRequest, Certificate>();
+            CreateMap<PortfolioRequest, Portfolio>();
+            CreateMap<SkillRequest, Skill>();
         }
     }
 }

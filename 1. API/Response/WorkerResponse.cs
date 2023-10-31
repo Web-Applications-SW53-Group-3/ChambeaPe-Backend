@@ -1,6 +1,4 @@
-﻿using _3._Data.Model;
-
-namespace _1._API.Response
+﻿namespace _1._API.Response
 {
     public class WorkerResponse
     {

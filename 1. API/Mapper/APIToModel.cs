@@ -13,6 +13,9 @@ namespace _1._API.Mapper
             CreateMap<WorkerRequest, UserRequest>();
             CreateMap<User, User>();
             CreateMap<Worker, Worker>();
+            CreateMap<EmployerRequest, Employer>();
+            CreateMap<EmployerRequest, User>();
+            CreateMap<EmployerRequest, UserRequest>();
         }
     }
 }

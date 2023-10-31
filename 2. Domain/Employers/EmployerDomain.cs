@@ -3,7 +3,6 @@ using _3._Data.Employers;
 using _2._Domain.Users;
 using _3._Data.Users;
 using _2._Domain.Exceptions;
-using _3._Data.Workers;
 
 namespace _2._Domain.Employers
 {

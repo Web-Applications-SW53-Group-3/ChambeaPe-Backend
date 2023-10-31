@@ -27,7 +27,7 @@ namespace _3._Data.Employers
                 .Where(e => e.IsActive && e.Id == id)
                 .Include(e => e.User)
                 .Include(e => e.Reviews)
-                .FirstAsync();
+                .FirstOrDefaultAsync();
         }
 
         public async Task<bool> CreateAsync(Employer employer)

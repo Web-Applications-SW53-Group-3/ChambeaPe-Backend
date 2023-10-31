@@ -30,7 +30,7 @@ namespace _2._Domain.Users
             {
                 throw new PhoneNumberAlreadyExistsException();
             }
-
+            user.UserRole = "-";
             return await _userData.CreateAsync(user);
         }
 
@@ -54,7 +54,7 @@ namespace _2._Domain.Users
             if (userToBeUpdated != null)
             {
                 //_mapper.Map(user, userToBeUpdated);
-                userToBeUpdated.UserRole = "W";
+                userToBeUpdated.UserRole = "-";
                 userToBeUpdated.FirstName = user.FirstName;
                 userToBeUpdated.LastName = user.LastName;
                 userToBeUpdated.Email = user.Email;

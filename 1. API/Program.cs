@@ -1,7 +1,9 @@
 using _1._API.Mapper;
+using _2._Domain.Employers;
 using _2._Domain.Users;
 using _2._Domain.Workers;
 using _3._Data.Context;
+using _3._Data.Employers;
 using _3._Data.Users;
 using _3._Data.Workers;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +22,9 @@ builder.Services.AddScoped<IUserDomain, UserDomain>();
 
 builder.Services.AddScoped<IWorkerData, WorkerMySQLData>();
 builder.Services.AddScoped<IWorkerDomain, WorkerDomain>();
+
+builder.Services.AddScoped<IEmployerData, EmployerMySQLData>();
+builder.Services.AddScoped<IEmployerDomain, EmployerDomain>();
 
 var connectionString = builder.Configuration.GetConnectionString("ChambeaPeDB");
 builder.Services.AddDbContext<ChambeaPeContext>(

@@ -83,8 +83,7 @@ namespace _3._Data.Workers
             }catch (Exception ex)
             {
                 return false;
-            }
-            
+            }    
         }
     }
 }

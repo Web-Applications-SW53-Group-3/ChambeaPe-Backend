@@ -53,7 +53,17 @@ namespace _2._Domain.Users
 
             if (userToBeUpdated != null)
             {
-                _mapper.Map(user, userToBeUpdated);
+                //_mapper.Map(user, userToBeUpdated);
+                userToBeUpdated.UserRole = "W";
+                userToBeUpdated.FirstName = user.FirstName;
+                userToBeUpdated.LastName = user.LastName;
+                userToBeUpdated.Email = user.Email;
+                userToBeUpdated.PhoneNumber = user.PhoneNumber;
+                userToBeUpdated.Description = user.Description;
+                userToBeUpdated.Birthdate = user.Birthdate;
+                userToBeUpdated.Gender = user.Gender;
+                userToBeUpdated.ProfilePic = user.ProfilePic;
+
                 return await _userData.UpdateAsync(userToBeUpdated, id);
             }
 

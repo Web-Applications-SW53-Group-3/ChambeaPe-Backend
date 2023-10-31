@@ -101,6 +101,8 @@ namespace _1._API.Controllers
                 var userRequest = _mapper.Map<WorkerRequest, UserRequest>(workerRequest);
                 var user = _mapper.Map<UserRequest, User>(userRequest);
                 var worker = _mapper.Map<WorkerRequest, Worker>(workerRequest);
+                worker.User = user;
+
                 await _workerDomain.UpdateAsync(worker, user, id);
                 return Ok(workerRequest);
             }
@@ -125,8 +127,22 @@ namespace _1._API.Controllers
 
         // DELETE api/<WorkerController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
+            try
+            {
+                await _workerDomain.DeleteAsync(id);
+                return Ok($"Worker with ID: {id} deleted successfuly");
+            }
+            catch (InvalidUserIDException)
+            {
+                return NotFound(new { error = "InvalidWorkerID", message = $"Worker ID {id} does not exist" });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error has ocurred: {ex.Message}");
+                return BadRequest();
+            }
         }
     }
 }

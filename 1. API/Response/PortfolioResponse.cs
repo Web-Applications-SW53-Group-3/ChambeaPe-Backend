@@ -2,5 +2,6 @@
 {
     public class PortfolioResponse
     {
+        public string ImageUrl { get; set; }
     }
 }

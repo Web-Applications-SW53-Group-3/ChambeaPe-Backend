@@ -23,6 +23,11 @@ namespace _3._Data.Workers
                 .ToListAsync();
         }
 
+        public async Task<Worker?> ExistsByIdAsync(int id)
+        {
+            return await _context.Workers.FindAsync(id);
+        }
+
         public async Task<Worker> GetByIdAsync(int id)
         {
             return await _context.Workers

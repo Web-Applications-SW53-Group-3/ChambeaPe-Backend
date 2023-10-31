@@ -481,6 +481,7 @@ public partial class ChambeaPeContext : DbContext
             entity.Property(e => e.Description)
                 .HasColumnType("text")
                 .HasColumnName("description");
+            entity.Property(e => e.Rating).HasColumnName("rating");
             entity.Property(e => e.EmployerId).HasColumnName("Employer_id");
             entity.Property(e => e.IsActive).HasColumnName("is_active").HasDefaultValue(true);
             entity.Property(e => e.SentById).HasColumnName("sent_by_id");

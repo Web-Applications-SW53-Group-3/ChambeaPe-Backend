@@ -9,6 +9,8 @@ public partial class Review : ModelBase
 
     public int WorkerId { get; set; }
 
+    public int Rating { get; set; }
+
     public string Description { get; set; } = null!;
 
     public DateTime Date { get; set; }

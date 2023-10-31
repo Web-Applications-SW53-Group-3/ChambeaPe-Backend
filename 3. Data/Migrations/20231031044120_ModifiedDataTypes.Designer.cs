@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using _3._Data.Context;
 
@@ -10,9 +11,11 @@ using _3._Data.Context;
 namespace _3._Data.Migrations
 {
     [DbContext(typeof(ChambeaPeContext))]
-    partial class ChambeaPeContextModelSnapshot : ModelSnapshot
+    [Migration("20231031044120_ModifiedDataTypes")]
+    partial class ModifiedDataTypes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

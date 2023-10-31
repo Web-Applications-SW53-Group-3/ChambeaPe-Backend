@@ -3106,3 +3106,606 @@ ORDER BY `t`.`id`, `t`.`id0`, `c`.`id`, `s`.`id`, `p`.`id`
 2023-10-30 04:21:47.168 -05:00 [INF] Executed action _1._API.Controllers.WorkerController.Get (1. API) in 1964.5604ms
 2023-10-30 04:21:47.168 -05:00 [INF] Executed endpoint '_1._API.Controllers.WorkerController.Get (1. API)'
 2023-10-30 04:21:47.168 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/Worker/2 - - - 200 - application/json;+charset=utf-8 1970.7234ms
+2023-10-30 22:45:53.041 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Advertisement' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.046 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Certificate' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.048 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Chat' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.050 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Claim' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.051 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Contract' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.052 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Employer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.054 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Evidence' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.055 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Message' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.057 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Notification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.058 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Portfolio' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.059 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Post' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.061 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Premium' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.062 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Review' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.064 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Service' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.065 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Skill' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.067 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Suscription' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.068 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.069 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'UserNotification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:53.071 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Worker' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 22:45:55.022 -05:00 [INF] Executed DbCommand (165ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM information_schema.tables
+WHERE table_type = 'BASE TABLE' AND table_schema = 'ChambeaPe'
+2023-10-30 22:45:55.424 -05:00 [INF] Now listening on: https://localhost:7209
+2023-10-30 22:45:55.426 -05:00 [INF] Now listening on: http://localhost:5065
+2023-10-30 22:45:55.429 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-30 22:45:55.431 -05:00 [INF] Hosting environment: Development
+2023-10-30 22:45:55.432 -05:00 [INF] Content root path: E:\Codigo\ChambeaPe\1. API
+2023-10-30 22:46:01.883 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger - -
+2023-10-30 22:46:02.039 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger - - - 301 0 - 158.3220ms
+2023-10-30 22:46:02.293 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger/index.html - -
+2023-10-30 22:46:02.732 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger/index.html - - - 200 - text/html;charset=utf-8 439.2020ms
+2023-10-30 22:46:02.877 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger/swagger-ui-bundle.js - -
+2023-10-30 22:46:02.877 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger/swagger-ui-standalone-preset.js - -
+2023-10-30 22:46:02.880 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger/swagger-ui.css - -
+2023-10-30 22:46:02.924 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-30 22:46:02.924 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-30 22:46:02.924 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 47.7747ms
+2023-10-30 22:46:02.924 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger/swagger-ui.css - - - 200 144929 text/css 44.8702ms
+2023-10-30 22:46:02.937 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/_framework/aspnetcore-browser-refresh.js - -
+2023-10-30 22:46:02.940 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-30 22:46:02.941 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 63.8557ms
+2023-10-30 22:46:02.941 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/_framework/aspnetcore-browser-refresh.js - - - 200 12344 application/javascript;+charset=utf-8 4.6009ms
+2023-10-30 22:46:02.994 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/_vs/browserLink - -
+2023-10-30 22:46:03.029 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.0069ms
+2023-10-30 22:46:03.997 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger/v1/swagger.json - -
+2023-10-30 22:46:04.132 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.5183ms
+2023-10-30 22:52:45.671 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/Worker - -
+2023-10-30 22:52:45.679 -05:00 [INF] Executing endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 22:52:45.696 -05:00 [INF] Route matched with {action = "Get", controller = "Worker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[_1._API.Response.WorkerResponse]]] GetAsync() on controller _1._API.Controllers.WorkerController (1. API).
+2023-10-30 22:52:47.272 -05:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-10-30 22:52:48.300 -05:00 [INF] Executed DbCommand (287ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `w`.`id`, `w`.`Date_created`, `w`.`Date_updated`, `w`.`is_active`, `w`.`occupation`, `w`.`User_id`, `u`.`id`, `u`.`birthdate`, `u`.`Date_created`, `u`.`Date_updated`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`, `c`.`id`, `c`.`certificate_name`, `c`.`Date_created`, `c`.`Date_updated`, `c`.`imgUrl`, `c`.`institution_name`, `c`.`is_active`, `c`.`issue_date`, `c`.`name`, `c`.`teacher_name`, `c`.`Worker_id`, `s`.`id`, `s`.`content`, `s`.`Date_created`, `s`.`Date_updated`, `s`.`is_active`, `s`.`Worker_id`, `p`.`id`, `p`.`Date_created`, `p`.`Date_updated`, `p`.`image_url`, `p`.`is_active`, `p`.`Worker_id`, `r`.`id`, `r`.`date`, `r`.`Date_created`, `r`.`Date_updated`, `r`.`description`, `r`.`Employer_id`, `r`.`is_active`, `r`.`sent_by_id`, `r`.`Worker_id`
+FROM `worker` AS `w`
+INNER JOIN `users` AS `u` ON `w`.`User_id` = `u`.`id`
+LEFT JOIN `certificates` AS `c` ON `w`.`id` = `c`.`Worker_id`
+LEFT JOIN `skills` AS `s` ON `w`.`id` = `s`.`Worker_id`
+LEFT JOIN `portfolio` AS `p` ON `w`.`id` = `p`.`Worker_id`
+LEFT JOIN `reviews` AS `r` ON `w`.`id` = `r`.`Worker_id`
+WHERE `w`.`is_active`
+ORDER BY `w`.`id`, `u`.`id`, `c`.`id`, `s`.`id`, `p`.`id`
+2023-10-30 22:52:48.491 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type '_3._Data.Context.ChambeaPeContext'.
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 187
+   at MySqlConnector.MySqlDataReader.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 245
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 187
+   at MySqlConnector.MySqlDataReader.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 245
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-10-30 22:52:48.607 -05:00 [ERR] An error has ocurred: Can't convert VarChar to Int32
+2023-10-30 22:52:48.612 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-30 22:52:48.621 -05:00 [INF] Executed action _1._API.Controllers.WorkerController.GetAsync (1. API) in 2921.9151ms
+2023-10-30 22:52:48.621 -05:00 [INF] Executed endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 22:52:48.626 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/Worker - - - 400 - application/problem+json;+charset=utf-8 2954.6241ms
+2023-10-30 22:52:57.638 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/Worker - -
+2023-10-30 22:52:57.639 -05:00 [INF] Executing endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 22:52:57.639 -05:00 [INF] Route matched with {action = "Get", controller = "Worker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[_1._API.Response.WorkerResponse]]] GetAsync() on controller _1._API.Controllers.WorkerController (1. API).
+2023-10-30 22:52:58.231 -05:00 [INF] Executed DbCommand (276ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `w`.`id`, `w`.`Date_created`, `w`.`Date_updated`, `w`.`is_active`, `w`.`occupation`, `w`.`User_id`, `u`.`id`, `u`.`birthdate`, `u`.`Date_created`, `u`.`Date_updated`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`, `c`.`id`, `c`.`certificate_name`, `c`.`Date_created`, `c`.`Date_updated`, `c`.`imgUrl`, `c`.`institution_name`, `c`.`is_active`, `c`.`issue_date`, `c`.`name`, `c`.`teacher_name`, `c`.`Worker_id`, `s`.`id`, `s`.`content`, `s`.`Date_created`, `s`.`Date_updated`, `s`.`is_active`, `s`.`Worker_id`, `p`.`id`, `p`.`Date_created`, `p`.`Date_updated`, `p`.`image_url`, `p`.`is_active`, `p`.`Worker_id`, `r`.`id`, `r`.`date`, `r`.`Date_created`, `r`.`Date_updated`, `r`.`description`, `r`.`Employer_id`, `r`.`is_active`, `r`.`sent_by_id`, `r`.`Worker_id`
+FROM `worker` AS `w`
+INNER JOIN `users` AS `u` ON `w`.`User_id` = `u`.`id`
+LEFT JOIN `certificates` AS `c` ON `w`.`id` = `c`.`Worker_id`
+LEFT JOIN `skills` AS `s` ON `w`.`id` = `s`.`Worker_id`
+LEFT JOIN `portfolio` AS `p` ON `w`.`id` = `p`.`Worker_id`
+LEFT JOIN `reviews` AS `r` ON `w`.`id` = `r`.`Worker_id`
+WHERE `w`.`is_active`
+ORDER BY `w`.`id`, `u`.`id`, `c`.`id`, `s`.`id`, `p`.`id`
+2023-10-30 22:52:58.239 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type '_3._Data.Context.ChambeaPeContext'.
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 187
+   at MySqlConnector.MySqlDataReader.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 245
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 187
+   at MySqlConnector.MySqlDataReader.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 245
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-10-30 22:52:58.321 -05:00 [ERR] An error has ocurred: Can't convert VarChar to Int32
+2023-10-30 22:52:58.322 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-30 22:52:58.322 -05:00 [INF] Executed action _1._API.Controllers.WorkerController.GetAsync (1. API) in 683.0746ms
+2023-10-30 22:52:58.322 -05:00 [INF] Executed endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 22:52:58.323 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/Worker - - - 400 - application/problem+json;+charset=utf-8 684.5163ms
+2023-10-30 22:53:07.774 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/User - -
+2023-10-30 22:53:07.774 -05:00 [INF] Executing endpoint '_1._API.Controllers.UserController.GetAsync (1. API)'
+2023-10-30 22:53:07.778 -05:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[_1._API.Response.UserResponse]]] GetAsync() on controller _1._API.Controllers.UserController (1. API).
+2023-10-30 22:53:08.191 -05:00 [INF] Executed DbCommand (139ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`id`, `u`.`birthdate`, `u`.`Date_created`, `u`.`Date_updated`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`
+FROM `users` AS `u`
+WHERE `u`.`is_active`
+2023-10-30 22:53:08.330 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[_1._API.Response.UserResponse, 1. API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-30 22:53:08.337 -05:00 [INF] Executed action _1._API.Controllers.UserController.GetAsync (1. API) in 559.4661ms
+2023-10-30 22:53:08.337 -05:00 [INF] Executed endpoint '_1._API.Controllers.UserController.GetAsync (1. API)'
+2023-10-30 22:53:08.337 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/User - - - 200 - application/json;+charset=utf-8 562.9068ms
+2023-10-30 22:53:13.973 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/Worker - -
+2023-10-30 22:53:13.973 -05:00 [INF] Executing endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 22:53:13.973 -05:00 [INF] Route matched with {action = "Get", controller = "Worker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[_1._API.Response.WorkerResponse]]] GetAsync() on controller _1._API.Controllers.WorkerController (1. API).
+2023-10-30 22:53:14.520 -05:00 [INF] Executed DbCommand (277ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `w`.`id`, `w`.`Date_created`, `w`.`Date_updated`, `w`.`is_active`, `w`.`occupation`, `w`.`User_id`, `u`.`id`, `u`.`birthdate`, `u`.`Date_created`, `u`.`Date_updated`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`, `c`.`id`, `c`.`certificate_name`, `c`.`Date_created`, `c`.`Date_updated`, `c`.`imgUrl`, `c`.`institution_name`, `c`.`is_active`, `c`.`issue_date`, `c`.`name`, `c`.`teacher_name`, `c`.`Worker_id`, `s`.`id`, `s`.`content`, `s`.`Date_created`, `s`.`Date_updated`, `s`.`is_active`, `s`.`Worker_id`, `p`.`id`, `p`.`Date_created`, `p`.`Date_updated`, `p`.`image_url`, `p`.`is_active`, `p`.`Worker_id`, `r`.`id`, `r`.`date`, `r`.`Date_created`, `r`.`Date_updated`, `r`.`description`, `r`.`Employer_id`, `r`.`is_active`, `r`.`sent_by_id`, `r`.`Worker_id`
+FROM `worker` AS `w`
+INNER JOIN `users` AS `u` ON `w`.`User_id` = `u`.`id`
+LEFT JOIN `certificates` AS `c` ON `w`.`id` = `c`.`Worker_id`
+LEFT JOIN `skills` AS `s` ON `w`.`id` = `s`.`Worker_id`
+LEFT JOIN `portfolio` AS `p` ON `w`.`id` = `p`.`Worker_id`
+LEFT JOIN `reviews` AS `r` ON `w`.`id` = `r`.`Worker_id`
+WHERE `w`.`is_active`
+ORDER BY `w`.`id`, `u`.`id`, `c`.`id`, `s`.`id`, `p`.`id`
+2023-10-30 22:53:14.526 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type '_3._Data.Context.ChambeaPeContext'.
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 187
+   at MySqlConnector.MySqlDataReader.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 245
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 187
+   at MySqlConnector.MySqlDataReader.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 245
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-10-30 22:53:14.608 -05:00 [ERR] An error has ocurred: Can't convert VarChar to Int32
+2023-10-30 22:53:14.608 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-30 22:53:14.608 -05:00 [INF] Executed action _1._API.Controllers.WorkerController.GetAsync (1. API) in 634.8131ms
+2023-10-30 22:53:14.608 -05:00 [INF] Executed endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 22:53:14.608 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/Worker - - - 400 - application/problem+json;+charset=utf-8 635.1741ms
+2023-10-30 22:54:37.094 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/Worker - -
+2023-10-30 22:54:37.095 -05:00 [INF] Executing endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 22:54:37.095 -05:00 [INF] Route matched with {action = "Get", controller = "Worker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[_1._API.Response.WorkerResponse]]] GetAsync() on controller _1._API.Controllers.WorkerController (1. API).
+2023-10-30 22:54:37.644 -05:00 [INF] Executed DbCommand (277ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `w`.`id`, `w`.`Date_created`, `w`.`Date_updated`, `w`.`is_active`, `w`.`occupation`, `w`.`User_id`, `u`.`id`, `u`.`birthdate`, `u`.`Date_created`, `u`.`Date_updated`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`, `c`.`id`, `c`.`certificate_name`, `c`.`Date_created`, `c`.`Date_updated`, `c`.`imgUrl`, `c`.`institution_name`, `c`.`is_active`, `c`.`issue_date`, `c`.`name`, `c`.`teacher_name`, `c`.`Worker_id`, `s`.`id`, `s`.`content`, `s`.`Date_created`, `s`.`Date_updated`, `s`.`is_active`, `s`.`Worker_id`, `p`.`id`, `p`.`Date_created`, `p`.`Date_updated`, `p`.`image_url`, `p`.`is_active`, `p`.`Worker_id`, `r`.`id`, `r`.`date`, `r`.`Date_created`, `r`.`Date_updated`, `r`.`description`, `r`.`Employer_id`, `r`.`is_active`, `r`.`sent_by_id`, `r`.`Worker_id`
+FROM `worker` AS `w`
+INNER JOIN `users` AS `u` ON `w`.`User_id` = `u`.`id`
+LEFT JOIN `certificates` AS `c` ON `w`.`id` = `c`.`Worker_id`
+LEFT JOIN `skills` AS `s` ON `w`.`id` = `s`.`Worker_id`
+LEFT JOIN `portfolio` AS `p` ON `w`.`id` = `p`.`Worker_id`
+LEFT JOIN `reviews` AS `r` ON `w`.`id` = `r`.`Worker_id`
+WHERE `w`.`is_active`
+ORDER BY `w`.`id`, `u`.`id`, `c`.`id`, `s`.`id`, `p`.`id`
+2023-10-30 22:54:37.650 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type '_3._Data.Context.ChambeaPeContext'.
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 175
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 175
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-10-30 22:54:37.733 -05:00 [ERR] An error has ocurred: Can't convert VarChar to Int32
+2023-10-30 22:54:37.734 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-30 22:54:37.734 -05:00 [INF] Executed action _1._API.Controllers.WorkerController.GetAsync (1. API) in 638.848ms
+2023-10-30 22:54:37.734 -05:00 [INF] Executed endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 22:54:37.734 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/Worker - - - 400 - application/problem+json;+charset=utf-8 640.0236ms
+2023-10-30 22:56:04.840 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/Worker/1 - -
+2023-10-30 22:56:04.841 -05:00 [INF] Executing endpoint '_1._API.Controllers.WorkerController.Get (1. API)'
+2023-10-30 22:56:04.851 -05:00 [INF] Route matched with {action = "Get", controller = "Worker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[_1._API.Response.WorkerResponse]] Get(Int32) on controller _1._API.Controllers.WorkerController (1. API).
+2023-10-30 22:56:05.053 -05:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-10-30 22:56:05.497 -05:00 [INF] Executed DbCommand (290ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`id`, `t`.`Date_created`, `t`.`Date_updated`, `t`.`is_active`, `t`.`occupation`, `t`.`User_id`, `t`.`id0`, `t`.`birthdate`, `t`.`Date_created0`, `t`.`Date_updated0`, `t`.`description`, `t`.`email`, `t`.`first_name`, `t`.`gender`, `t`.`has_premium`, `t`.`is_active0`, `t`.`last_name`, `t`.`password`, `t`.`phone_number`, `t`.`profile_pic`, `t`.`user_role`, `c`.`id`, `c`.`certificate_name`, `c`.`Date_created`, `c`.`Date_updated`, `c`.`imgUrl`, `c`.`institution_name`, `c`.`is_active`, `c`.`issue_date`, `c`.`name`, `c`.`teacher_name`, `c`.`Worker_id`, `s`.`id`, `s`.`content`, `s`.`Date_created`, `s`.`Date_updated`, `s`.`is_active`, `s`.`Worker_id`, `p`.`id`, `p`.`Date_created`, `p`.`Date_updated`, `p`.`image_url`, `p`.`is_active`, `p`.`Worker_id`, `r`.`id`, `r`.`date`, `r`.`Date_created`, `r`.`Date_updated`, `r`.`description`, `r`.`Employer_id`, `r`.`is_active`, `r`.`sent_by_id`, `r`.`Worker_id`
+FROM (
+    SELECT `w`.`id`, `w`.`Date_created`, `w`.`Date_updated`, `w`.`is_active`, `w`.`occupation`, `w`.`User_id`, `u`.`id` AS `id0`, `u`.`birthdate`, `u`.`Date_created` AS `Date_created0`, `u`.`Date_updated` AS `Date_updated0`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active` AS `is_active0`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`
+    FROM `worker` AS `w`
+    INNER JOIN `users` AS `u` ON `w`.`User_id` = `u`.`id`
+    WHERE (`w`.`is_active` AND (`w`.`id` = @__id_0)) AND `w`.`is_active`
+    LIMIT 1
+) AS `t`
+LEFT JOIN `certificates` AS `c` ON `t`.`id` = `c`.`Worker_id`
+LEFT JOIN `skills` AS `s` ON `t`.`id` = `s`.`Worker_id`
+LEFT JOIN `portfolio` AS `p` ON `t`.`id` = `p`.`Worker_id`
+LEFT JOIN `reviews` AS `r` ON `t`.`id` = `r`.`Worker_id`
+ORDER BY `t`.`id`, `t`.`id0`, `c`.`id`, `s`.`id`, `p`.`id`
+2023-10-30 22:56:05.503 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type '_3._Data.Context.ChambeaPeContext'.
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 175
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 175
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-10-30 22:56:05.587 -05:00 [ERR] An error has ocurred: Can't convert VarChar to Int32
+2023-10-30 22:56:05.587 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-30 22:56:05.587 -05:00 [INF] Executed action _1._API.Controllers.WorkerController.Get (1. API) in 736.0362ms
+2023-10-30 22:56:05.587 -05:00 [INF] Executed endpoint '_1._API.Controllers.WorkerController.Get (1. API)'
+2023-10-30 22:56:05.587 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/Worker/1 - - - 400 - application/problem+json;+charset=utf-8 747.4509ms
+2023-10-30 23:04:17.234 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/User - -
+2023-10-30 23:04:17.235 -05:00 [INF] Executing endpoint '_1._API.Controllers.UserController.GetAsync (1. API)'
+2023-10-30 23:04:17.235 -05:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[_1._API.Response.UserResponse]]] GetAsync() on controller _1._API.Controllers.UserController (1. API).
+2023-10-30 23:04:19.198 -05:00 [INF] Executed DbCommand (133ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`id`, `u`.`birthdate`, `u`.`Date_created`, `u`.`Date_updated`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`
+FROM `users` AS `u`
+WHERE `u`.`is_active`
+2023-10-30 23:04:19.199 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[_1._API.Response.UserResponse, 1. API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-30 23:04:19.199 -05:00 [INF] Executed action _1._API.Controllers.UserController.GetAsync (1. API) in 1964.4589ms
+2023-10-30 23:04:19.199 -05:00 [INF] Executed endpoint '_1._API.Controllers.UserController.GetAsync (1. API)'
+2023-10-30 23:04:19.199 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/User - - - 200 - application/json;+charset=utf-8 1965.6569ms
+2023-10-30 23:04:31.103 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/Worker - -
+2023-10-30 23:04:31.103 -05:00 [INF] Executing endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 23:04:31.103 -05:00 [INF] Route matched with {action = "Get", controller = "Worker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[_1._API.Response.WorkerResponse]]] GetAsync() on controller _1._API.Controllers.WorkerController (1. API).
+2023-10-30 23:04:31.647 -05:00 [INF] Executed DbCommand (271ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `w`.`id`, `w`.`Date_created`, `w`.`Date_updated`, `w`.`is_active`, `w`.`occupation`, `w`.`User_id`, `u`.`id`, `u`.`birthdate`, `u`.`Date_created`, `u`.`Date_updated`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`, `c`.`id`, `c`.`certificate_name`, `c`.`Date_created`, `c`.`Date_updated`, `c`.`imgUrl`, `c`.`institution_name`, `c`.`is_active`, `c`.`issue_date`, `c`.`name`, `c`.`teacher_name`, `c`.`Worker_id`, `s`.`id`, `s`.`content`, `s`.`Date_created`, `s`.`Date_updated`, `s`.`is_active`, `s`.`Worker_id`, `p`.`id`, `p`.`Date_created`, `p`.`Date_updated`, `p`.`image_url`, `p`.`is_active`, `p`.`Worker_id`, `r`.`id`, `r`.`date`, `r`.`Date_created`, `r`.`Date_updated`, `r`.`description`, `r`.`Employer_id`, `r`.`is_active`, `r`.`sent_by_id`, `r`.`Worker_id`
+FROM `worker` AS `w`
+INNER JOIN `users` AS `u` ON `w`.`User_id` = `u`.`id`
+LEFT JOIN `certificates` AS `c` ON `w`.`id` = `c`.`Worker_id`
+LEFT JOIN `skills` AS `s` ON `w`.`id` = `s`.`Worker_id`
+LEFT JOIN `portfolio` AS `p` ON `w`.`id` = `p`.`Worker_id`
+LEFT JOIN `reviews` AS `r` ON `w`.`id` = `r`.`Worker_id`
+WHERE `w`.`is_active`
+ORDER BY `w`.`id`, `u`.`id`, `c`.`id`, `s`.`id`, `p`.`id`
+2023-10-30 23:04:31.653 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type '_3._Data.Context.ChambeaPeContext'.
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 175
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Can't convert VarChar to Int32
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 175
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadInt(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-10-30 23:04:31.732 -05:00 [ERR] An error has ocurred: Can't convert VarChar to Int32
+2023-10-30 23:04:31.732 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-30 23:04:31.732 -05:00 [INF] Executed action _1._API.Controllers.WorkerController.GetAsync (1. API) in 628.6365ms
+2023-10-30 23:04:31.732 -05:00 [INF] Executed endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 23:04:31.732 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/Worker - - - 400 - application/problem+json;+charset=utf-8 629.0627ms
+2023-10-30 23:26:43.149 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Advertisement' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.153 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Certificate' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.156 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Chat' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.158 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Claim' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.160 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Contract' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.161 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Employer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.163 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Evidence' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.165 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Message' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.166 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Notification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.172 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Portfolio' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.210 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Post' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.212 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Premium' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.213 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Review' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.214 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Service' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.217 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Skill' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.218 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Suscription' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.220 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.226 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'UserNotification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:43.231 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Worker' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:26:45.094 -05:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM information_schema.tables
+WHERE table_type = 'BASE TABLE' AND table_schema = 'ChambeaPe'
+2023-10-30 23:26:45.284 -05:00 [INF] Now listening on: https://localhost:7209
+2023-10-30 23:26:45.286 -05:00 [INF] Now listening on: http://localhost:5065
+2023-10-30 23:26:45.290 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-30 23:26:45.292 -05:00 [INF] Hosting environment: Development
+2023-10-30 23:26:45.294 -05:00 [INF] Content root path: E:\Codigo\ChambeaPe\1. API
+2023-10-30 23:26:45.738 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger/index.html - -
+2023-10-30 23:26:45.904 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger/index.html - - - 200 - text/html;charset=utf-8 167.8463ms
+2023-10-30 23:26:45.985 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/_framework/aspnetcore-browser-refresh.js - -
+2023-10-30 23:26:45.985 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/_vs/browserLink - -
+2023-10-30 23:26:45.996 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/_framework/aspnetcore-browser-refresh.js - - - 200 12344 application/javascript;+charset=utf-8 10.7401ms
+2023-10-30 23:26:46.009 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.6204ms
+2023-10-30 23:26:46.170 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger/v1/swagger.json - -
+2023-10-30 23:26:46.251 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 81.7545ms
+2023-10-30 23:26:48.635 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/Worker - -
+2023-10-30 23:26:48.641 -05:00 [INF] Executing endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 23:26:48.653 -05:00 [INF] Route matched with {action = "Get", controller = "Worker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[_1._API.Response.WorkerResponse]]] GetAsync() on controller _1._API.Controllers.WorkerController (1. API).
+2023-10-30 23:26:49.112 -05:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-10-30 23:26:49.577 -05:00 [INF] Executed DbCommand (289ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `w`.`id`, `w`.`Date_created`, `w`.`Date_updated`, `w`.`is_active`, `w`.`occupation`, `w`.`User_id`, `u`.`id`, `u`.`birthdate`, `u`.`Date_created`, `u`.`Date_updated`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`, `c`.`id`, `c`.`certificate_name`, `c`.`Date_created`, `c`.`Date_updated`, `c`.`imgUrl`, `c`.`institution_name`, `c`.`is_active`, `c`.`issue_date`, `c`.`name`, `c`.`teacher_name`, `c`.`Worker_id`, `s`.`id`, `s`.`content`, `s`.`Date_created`, `s`.`Date_updated`, `s`.`is_active`, `s`.`Worker_id`, `r`.`id`, `r`.`date`, `r`.`Date_created`, `r`.`Date_updated`, `r`.`description`, `r`.`Employer_id`, `r`.`is_active`, `r`.`sent_by_id`, `r`.`Worker_id`
+FROM `worker` AS `w`
+INNER JOIN `users` AS `u` ON `w`.`User_id` = `u`.`id`
+LEFT JOIN `certificates` AS `c` ON `w`.`id` = `c`.`Worker_id`
+LEFT JOIN `skills` AS `s` ON `w`.`id` = `s`.`Worker_id`
+LEFT JOIN `reviews` AS `r` ON `w`.`id` = `r`.`Worker_id`
+WHERE `w`.`is_active`
+ORDER BY `w`.`id`, `u`.`id`, `c`.`id`, `s`.`id`
+2023-10-30 23:26:49.741 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[_1._API.Response.WorkerResponse, 1. API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-30 23:26:49.757 -05:00 [INF] Executed action _1._API.Controllers.WorkerController.GetAsync (1. API) in 1101.5131ms
+2023-10-30 23:26:49.758 -05:00 [INF] Executed endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 23:26:49.762 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/Worker - - - 200 - application/json;+charset=utf-8 1126.6735ms
+2023-10-30 23:41:18.505 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Advertisement' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.509 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Certificate' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.509 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Chat' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.509 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Claim' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.509 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Contract' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.509 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Employer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.509 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Evidence' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.509 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Message' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.509 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Notification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.510 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Portfolio' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.510 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Post' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.510 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Premium' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.510 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Review' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.510 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Service' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.510 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Skill' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.510 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Suscription' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.510 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.510 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'UserNotification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:18.511 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Worker' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.152 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Advertisement' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.153 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Certificate' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.153 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Chat' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.154 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Claim' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.154 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Contract' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.757 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Employer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.757 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Evidence' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.757 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Message' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.757 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Notification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:19.757 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Portfolio' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:20.338 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Post' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:20.338 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Premium' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:20.338 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Review' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:20.338 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Service' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:20.338 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Skill' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:20.880 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Suscription' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:20.881 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:20.881 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'UserNotification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:20.881 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Worker' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.306 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Advertisement' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.308 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Certificate' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.308 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Chat' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.308 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Claim' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.309 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Contract' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.309 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Employer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.309 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Evidence' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.309 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Message' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.309 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Notification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.309 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Portfolio' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.309 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Post' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.309 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Premium' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.310 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Review' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.310 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Service' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.310 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Skill' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.310 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Suscription' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.310 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.310 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'UserNotification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:38.310 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Worker' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:41:40.677 -05:00 [INF] Executed DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ChambeaPe' AND TABLE_NAME='__EFMigrationsHistory';
+2023-10-30 23:41:41.750 -05:00 [INF] Executed DbCommand (142ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ChambeaPe' AND TABLE_NAME='__EFMigrationsHistory';
+2023-10-30 23:41:42.128 -05:00 [INF] Executed DbCommand (230ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-10-30 23:41:42.139 -05:00 [INF] Applying migration '20231031044120_ModifiedDataTypes'.
+2023-10-30 23:41:43.155 -05:00 [INF] Executed DbCommand (514ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `worker` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.144263';
+2023-10-30 23:41:43.373 -05:00 [INF] Executed DbCommand (217ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `users` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.143635';
+2023-10-30 23:41:43.535 -05:00 [INF] Executed DbCommand (162ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `user_notifications` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.14389';
+2023-10-30 23:41:43.700 -05:00 [INF] Executed DbCommand (165ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `suscription` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.143285';
+2023-10-30 23:41:43.862 -05:00 [INF] Executed DbCommand (162ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `skills` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.14299';
+2023-10-30 23:41:44.023 -05:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `service` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.142715';
+2023-10-30 23:41:44.190 -05:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `reviews` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.142319';
+2023-10-30 23:41:44.386 -05:00 [INF] Executed DbCommand (195ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `reviews` ADD `rating` int NOT NULL DEFAULT 0;
+2023-10-30 23:41:44.553 -05:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `premium` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.142113';
+2023-10-30 23:41:44.726 -05:00 [INF] Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `posts` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.141858';
+2023-10-30 23:41:45.124 -05:00 [INF] Executed DbCommand (398ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `portfolio` MODIFY COLUMN `image_url` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL;
+2023-10-30 23:41:45.282 -05:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `portfolio` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.141581';
+2023-10-30 23:41:45.443 -05:00 [INF] Executed DbCommand (162ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `notifications` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.141427';
+2023-10-30 23:41:45.608 -05:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `message` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.141294';
+2023-10-30 23:41:45.772 -05:00 [INF] Executed DbCommand (165ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `evidences` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.141059';
+2023-10-30 23:41:45.956 -05:00 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `employer` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.140781';
+2023-10-30 23:41:46.123 -05:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `contract` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.140378';
+2023-10-30 23:41:46.290 -05:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `claims` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.139969';
+2023-10-30 23:41:46.450 -05:00 [INF] Executed DbCommand (160ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `chat` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.139433';
+2023-10-30 23:41:46.607 -05:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `advertisements` MODIFY COLUMN `Date_created` datetime NOT NULL DEFAULT '2023-10-30 23:41:19.138745';
+2023-10-30 23:41:46.751 -05:00 [INF] Executed DbCommand (144ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20231031044120_ModifiedDataTypes', '7.0.12');
+2023-10-30 23:43:35.363 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Advertisement' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.367 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Certificate' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.370 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Chat' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.372 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Claim' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.373 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Contract' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.374 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Employer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.376 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Evidence' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.377 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Message' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.378 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Notification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.379 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Portfolio' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.380 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Post' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.385 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Premium' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.386 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Review' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.387 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Service' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.388 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Skill' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.389 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Suscription' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.422 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.424 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'UserNotification' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:35.425 -05:00 [WRN] The 'bool' property 'IsActive' on entity type 'Worker' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-30 23:43:37.180 -05:00 [INF] Executed DbCommand (139ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM information_schema.tables
+WHERE table_type = 'BASE TABLE' AND table_schema = 'ChambeaPe'
+2023-10-30 23:43:37.358 -05:00 [INF] Now listening on: https://localhost:7209
+2023-10-30 23:43:37.359 -05:00 [INF] Now listening on: http://localhost:5065
+2023-10-30 23:43:37.363 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-30 23:43:37.365 -05:00 [INF] Hosting environment: Development
+2023-10-30 23:43:37.366 -05:00 [INF] Content root path: E:\Codigo\ChambeaPe\1. API
+2023-10-30 23:43:37.927 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger/index.html - -
+2023-10-30 23:43:38.102 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger/index.html - - - 200 - text/html;charset=utf-8 176.2479ms
+2023-10-30 23:43:38.169 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/_framework/aspnetcore-browser-refresh.js - -
+2023-10-30 23:43:38.169 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/_vs/browserLink - -
+2023-10-30 23:43:38.190 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/_framework/aspnetcore-browser-refresh.js - - - 200 12344 application/javascript;+charset=utf-8 19.9484ms
+2023-10-30 23:43:38.196 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.9522ms
+2023-10-30 23:43:38.260 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger/v1/swagger.json - -
+2023-10-30 23:43:38.341 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 81.3767ms
+2023-10-30 23:43:41.280 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7209/api/Worker - -
+2023-10-30 23:43:41.286 -05:00 [INF] Executing endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 23:43:41.299 -05:00 [INF] Route matched with {action = "Get", controller = "Worker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[_1._API.Response.WorkerResponse]]] GetAsync() on controller _1._API.Controllers.WorkerController (1. API).
+2023-10-30 23:43:41.803 -05:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-10-30 23:43:42.251 -05:00 [INF] Executed DbCommand (277ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `w`.`id`, `w`.`Date_created`, `w`.`Date_updated`, `w`.`is_active`, `w`.`occupation`, `w`.`User_id`, `u`.`id`, `u`.`birthdate`, `u`.`Date_created`, `u`.`Date_updated`, `u`.`description`, `u`.`email`, `u`.`first_name`, `u`.`gender`, `u`.`has_premium`, `u`.`is_active`, `u`.`last_name`, `u`.`password`, `u`.`phone_number`, `u`.`profile_pic`, `u`.`user_role`, `c`.`id`, `c`.`certificate_name`, `c`.`Date_created`, `c`.`Date_updated`, `c`.`imgUrl`, `c`.`institution_name`, `c`.`is_active`, `c`.`issue_date`, `c`.`name`, `c`.`teacher_name`, `c`.`Worker_id`, `s`.`id`, `s`.`content`, `s`.`Date_created`, `s`.`Date_updated`, `s`.`is_active`, `s`.`Worker_id`, `p`.`id`, `p`.`Date_created`, `p`.`Date_updated`, `p`.`image_url`, `p`.`is_active`, `p`.`Worker_id`, `r`.`id`, `r`.`date`, `r`.`Date_created`, `r`.`Date_updated`, `r`.`description`, `r`.`Employer_id`, `r`.`is_active`, `r`.`rating`, `r`.`sent_by_id`, `r`.`Worker_id`
+FROM `worker` AS `w`
+INNER JOIN `users` AS `u` ON `w`.`User_id` = `u`.`id`
+LEFT JOIN `certificates` AS `c` ON `w`.`id` = `c`.`Worker_id`
+LEFT JOIN `skills` AS `s` ON `w`.`id` = `s`.`Worker_id`
+LEFT JOIN `portfolio` AS `p` ON `w`.`id` = `p`.`Worker_id`
+LEFT JOIN `reviews` AS `r` ON `w`.`id` = `r`.`Worker_id`
+WHERE `w`.`is_active`
+ORDER BY `w`.`id`, `u`.`id`, `c`.`id`, `s`.`id`, `p`.`id`
+2023-10-30 23:43:42.420 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[_1._API.Response.WorkerResponse, 1. API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-30 23:43:42.436 -05:00 [INF] Executed action _1._API.Controllers.WorkerController.GetAsync (1. API) in 1134.0268ms
+2023-10-30 23:43:42.436 -05:00 [INF] Executed endpoint '_1._API.Controllers.WorkerController.GetAsync (1. API)'
+2023-10-30 23:43:42.440 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7209/api/Worker - - - 200 - application/json;+charset=utf-8 1159.9396ms

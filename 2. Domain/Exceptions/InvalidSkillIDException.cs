@@ -1,4 +1,6 @@
-﻿namespace _2._Domain.Exceptions
+﻿using System;
+
+namespace _2._Domain.Exceptions
 {
     public class InvalidSkillIDException : Exception
     {

@@ -1,4 +1,6 @@
-﻿namespace _1._API.Response
+﻿using System;
+
+namespace _1._API.Response
 {
     public class EmployerResponse
     {

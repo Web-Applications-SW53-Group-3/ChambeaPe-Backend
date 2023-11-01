@@ -1,4 +1,6 @@
-﻿public class CertificateResponse
+﻿using System;
+
+public class CertificateResponse
 {
     public string Name { get; set; } = null!;
 

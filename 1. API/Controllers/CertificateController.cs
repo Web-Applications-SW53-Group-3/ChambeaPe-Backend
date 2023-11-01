@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using _1._API.Request;
 using _1._API.Response;
 using _2._Domain.Certificates;
@@ -6,6 +9,7 @@ using _3._Data.Certificates;
 using _3._Data.Model;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace _1._API.Controllers
 {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _1._API.Response
+﻿namespace _1._API.Response
 {
     public class AdvertisementResponse
     {

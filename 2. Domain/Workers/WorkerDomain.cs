@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using _3._Data.Model;
+﻿using _3._Data.Model;
 using _3._Data.Workers;
 using _2._Domain.Users;
 using _3._Data.Users;

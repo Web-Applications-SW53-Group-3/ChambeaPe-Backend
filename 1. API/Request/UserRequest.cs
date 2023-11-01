@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
 namespace _1._API.Request
@@ -22,8 +23,6 @@ namespace _1._API.Request
         public DateTime Birthdate { get; set; }
         [Required]
         public string Gender { get; set; } = null!;
-        [Required]
-        public string UserRole { get; set; } = null!;
         [Required]
         [Url]
         public string ProfilePic { get; set; } = null!;

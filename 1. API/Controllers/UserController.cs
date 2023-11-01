@@ -1,4 +1,7 @@
-﻿using _1._API.Request;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using _1._API.Request;
 using _1._API.Response;
 using _2._Domain.Exceptions;
 using _2._Domain.Users;
@@ -6,6 +9,7 @@ using _3._Data.Model;
 using _3._Data.Users;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 
 namespace _1._API.Controllers
@@ -72,7 +76,7 @@ namespace _1._API.Controllers
             try
             {
                 var user = _mapper.Map<UserRequest, User>(request);
-                await _userDomain.CreateAsync(user);
+                await _userDomain.CreateAsync(user, "-");
                 return Ok(request);
             }
             catch(EmailAlreadyExistsException)
@@ -97,7 +101,7 @@ namespace _1._API.Controllers
             try
             {
                 var user = _mapper.Map<UserRequest, User>(request);
-                await _userDomain.UpdateAsync(user, id);
+                await _userDomain.UpdateAsync(user, id, "-");
                 return Ok(request);
             }
             catch (EmailAlreadyExistsException)

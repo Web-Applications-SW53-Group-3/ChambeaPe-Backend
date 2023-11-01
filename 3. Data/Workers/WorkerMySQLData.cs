@@ -11,6 +11,11 @@ namespace _3._Data.Workers
         {
             _context = context;
         }
+        
+        public async Task<Worker?> ExistsByIdAsync(int id)
+        {
+            return await _context.Workers.FindAsync(id);
+        }
         public async Task<List<Worker>> GetAllAsync()
         {
             return await _context.Workers
@@ -33,7 +38,7 @@ namespace _3._Data.Workers
                 .Include(w => w.Skills)
                 .Include(w => w.Portfolios)
                 .Include(w => w.Reviews)
-                .FirstAsync();
+                .FirstOrDefaultAsync();
         }
 
         public async Task<bool> CreateAsync(Worker worker)
@@ -54,13 +59,10 @@ namespace _3._Data.Workers
         {
             try
             {
-                var workerToBeUpdated = await _context.Workers.Where(w => w.IsActive && w.Id == id).FirstAsync();
-                if(workerToBeUpdated == null)
-                {
-                    return false;
-                }
-                workerToBeUpdated = worker;
-                _context.Workers.Update(workerToBeUpdated);
+                worker.Id = id;
+                worker.IsActive = true;
+                worker.DateUpdated = DateTime.Now;
+                _context.Workers.Update(worker);
                 await _context.SaveChangesAsync();
                 return true;
             }
@@ -86,8 +88,7 @@ namespace _3._Data.Workers
             }catch (Exception ex)
             {
                 return false;
-            }
-            
+            }    
         }
     }
 }

@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using _1._API.Response;
 using AutoMapper;
 using _3._Data.Model;
@@ -6,6 +9,7 @@ using _3._Data.Workers;
 using _2._Domain.Workers;
 using _1._API.Request;
 using _2._Domain.Exceptions;
+using Microsoft.Extensions.Logging;
 
 namespace _1._API.Controllers
 {
@@ -76,13 +80,17 @@ namespace _1._API.Controllers
                 await _workerDomain.CreateAsync(worker, user);
                 return Ok(workerRequest);
             }
-            catch (EmailAlreadyExistsException)
+            catch (EmailAlreadyExistsException ex)
             {
-                return BadRequest(new { error = "EmailAlreadyExists", message = "The email is already in use" });
+                return BadRequest(new { error = "EmailAlreadyExists", message = ex.Message });
             }
-            catch (PhoneNumberAlreadyExistsException)
+            catch (PhoneNumberAlreadyExistsException ex)
             {
-                return BadRequest(new { error = "PhoneNumberAlreadyExists", message = "The phone number is already in use" });
+                return BadRequest(new { error = "PhoneNumberAlreadyExists", message = ex.Message });
+            }
+            catch(UserRegistrationException ex)
+            {
+                return BadRequest(new { error = "UserRegistrationError", message = ex.Message });
             }
             catch (Exception ex)
             {
@@ -101,6 +109,8 @@ namespace _1._API.Controllers
                 var userRequest = _mapper.Map<WorkerRequest, UserRequest>(workerRequest);
                 var user = _mapper.Map<UserRequest, User>(userRequest);
                 var worker = _mapper.Map<WorkerRequest, Worker>(workerRequest);
+                worker.User = user;
+
                 await _workerDomain.UpdateAsync(worker, user, id);
                 return Ok(workerRequest);
             }
@@ -125,8 +135,22 @@ namespace _1._API.Controllers
 
         // DELETE api/<WorkerController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
+            try
+            {
+                await _workerDomain.DeleteAsync(id);
+                return Ok($"Worker with ID: {id} deleted successfuly");
+            }
+            catch (InvalidUserIDException)
+            {
+                return NotFound(new { error = "InvalidWorkerID", message = $"Worker ID {id} does not exist" });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error has ocurred: {ex.Message}");
+                return BadRequest();
+            }
         }
     }
 }

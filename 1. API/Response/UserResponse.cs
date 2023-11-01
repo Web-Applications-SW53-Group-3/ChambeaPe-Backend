@@ -1,7 +1,10 @@
-﻿namespace _1._API.Response
+﻿using System;
+
+namespace _1._API.Response
 {
     public class UserResponse
     {
+        public string Id { get; set; } = null!;
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
         public string Email { get; set; } = null!;

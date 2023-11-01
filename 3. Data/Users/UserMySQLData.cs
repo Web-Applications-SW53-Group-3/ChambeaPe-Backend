@@ -48,15 +48,11 @@ namespace _3._Data.Users
         {
             try
             {
-                var userToBeUpdated = await _context.Users.Where(u => u.Id == id && u.IsActive).FirstAsync();
-                if(userToBeUpdated != null)
-                {
-                    user.DateUpdated = DateTime.Now;
-                    _context.Users.Update(user);
-                    await _context.SaveChangesAsync();
-                    return true;
-                }
-                return false;
+                user.IsActive = true;
+                user.DateUpdated = DateTime.Now;
+                _context.Users.Update(user);
+                await _context.SaveChangesAsync();
+                return true;
             }
             catch (Exception ex)
             {

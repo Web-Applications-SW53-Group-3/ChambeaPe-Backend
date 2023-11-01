@@ -2180,39 +2180,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\diego\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jenni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Codigo\\ChambeaPe\\2. Domain\\2. Domain.csproj",
+      "projectUniqueName": "D:\\Code Local\\Code 5to Ciclo UPC\\App Web\\ChambeaPe API\\ChambeaPe-Backend\\2. Domain\\2. Domain.csproj",
       "projectName": "2. Domain",
-      "projectPath": "E:\\Codigo\\ChambeaPe\\2. Domain\\2. Domain.csproj",
-      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "E:\\Codigo\\ChambeaPe\\2. Domain\\obj\\",
+      "projectPath": "D:\\Code Local\\Code 5to Ciclo UPC\\App Web\\ChambeaPe API\\ChambeaPe-Backend\\2. Domain\\2. Domain.csproj",
+      "packagesPath": "C:\\Users\\jenni\\.nuget\\packages\\",
+      "outputPath": "D:\\Code Local\\Code 5to Ciclo UPC\\App Web\\ChambeaPe API\\ChambeaPe-Backend\\2. Domain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\jenni\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\Codigo\\ChambeaPe\\3. Data\\3. Data.csproj": {
-              "projectPath": "E:\\Codigo\\ChambeaPe\\3. Data\\3. Data.csproj"
+            "D:\\Code Local\\Code 5to Ciclo UPC\\App Web\\ChambeaPe API\\ChambeaPe-Backend\\3. Data\\3. Data.csproj": {
+              "projectPath": "D:\\Code Local\\Code 5to Ciclo UPC\\App Web\\ChambeaPe API\\ChambeaPe-Backend\\3. Data\\3. Data.csproj"
             }
           }
         }
@@ -2252,7 +2245,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\jenni\\.dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

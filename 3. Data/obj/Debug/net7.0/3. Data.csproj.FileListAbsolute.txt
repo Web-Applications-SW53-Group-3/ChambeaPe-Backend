@@ -12,3 +12,17 @@ E:\Codigo\ChambeaPe\3. Data\obj\Debug\net7.0\ref\3. Data.dll
 E:\Codigo\ChambeaPe\3. Data\bin\Debug\net7.0\3. Data.runtimeconfig.json
 E:\Codigo\ChambeaPe\3. Data\obj\Debug\net7.0\3. Data.csproj.AssemblyReference.cache
 E:\Codigo\ChambeaPe\3. Data\obj\Debug\net7.0\3. Data.genruntimeconfig.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\bin\Debug\net7.0\3. Data.deps.json
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\bin\Debug\net7.0\3. Data.runtimeconfig.json
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\bin\Debug\net7.0\3. Data.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\bin\Debug\net7.0\3. Data.pdb
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\3. Data.csproj.AssemblyReference.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\3. Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\3. Data.AssemblyInfoInputs.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\3. Data.AssemblyInfo.cs
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\3. Data.csproj.CoreCompileInputs.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\3. Data.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\refint\3. Data.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\3. Data.pdb
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\3. Data.genruntimeconfig.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\3. Data\obj\Debug\net7.0\ref\3. Data.dll

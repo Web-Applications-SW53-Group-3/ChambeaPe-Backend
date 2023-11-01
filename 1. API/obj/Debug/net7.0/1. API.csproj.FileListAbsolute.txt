@@ -54,3 +54,59 @@ E:\Codigo\ChambeaPe\1. API\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
 E:\Codigo\ChambeaPe\1. API\bin\Debug\net7.0\Serilog.Sinks.Async.dll
 E:\Codigo\ChambeaPe\1. API\bin\Debug\net7.0\Serilog.Sinks.File.dll
 E:\Codigo\ChambeaPe\1. API\bin\Debug\net7.0\Serilog.Sinks.RollingFile.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\appsettings.Development.json
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\appsettings.json
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\1. API.exe
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\1. API.deps.json
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\1. API.runtimeconfig.json
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\1. API.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\1. API.pdb
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\AutoMapper.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Humanizer.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\MySqlConnector.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Serilog.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Serilog.Extensions.Logging.File.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Serilog.Sinks.Async.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Serilog.Sinks.File.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Serilog.Sinks.RollingFile.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\System.CodeDom.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\2. Domain.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\3. Data.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\2. Domain.pdb
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\bin\Debug\net7.0\3. Data.pdb
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.csproj.AssemblyReference.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.AssemblyInfoInputs.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.AssemblyInfo.cs
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.csproj.CoreCompileInputs.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.MvcApplicationPartsAssemblyInfo.cs
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.MvcApplicationPartsAssemblyInfo.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\staticwebassets\msbuild.1. API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\staticwebassets\msbuild.build.1. API.props
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.1. API.props
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.1. API.props
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\staticwebassets.build.json
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\staticwebassets.development.json
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\scopedcss\bundle\1. API.styles.css
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.csproj.CopyComplete
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\refint\1. API.dll
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.pdb
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\1. API.genruntimeconfig.cache
+D:\Code Local\Code 5to Ciclo UPC\App Web\ChambeaPe API\ChambeaPe-Backend\1. API\obj\Debug\net7.0\ref\1. API.dll

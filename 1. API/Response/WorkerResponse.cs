@@ -15,7 +15,7 @@
         public string ProfilePic { get; set; } = null!;
         public string Occupation { get; set; } = null!;
         public virtual List<CertificateResponse> Certificates { get; set; } = null!;
-        public virtual List<PortfolioResponse> Portfolio {get; set;} = null!;
+        public virtual List<PortfolioResponse> Portfolios {get; set;} = null!;
         public virtual List<SkillResponse> Skills {get; set;} = null!;
         public virtual List<ReviewResponse> Reviews { get; set; } = null!;
     }

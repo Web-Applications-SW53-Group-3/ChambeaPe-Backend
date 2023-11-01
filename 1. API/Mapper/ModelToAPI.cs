@@ -26,7 +26,9 @@ namespace _1._API.Mapper
             CreateMap<Certificate, CertificateResponse>();
             CreateMap<Skill, SkillResponse>();
             CreateMap<Portfolio, PortfolioResponse>();
-            CreateMap<Review, ReviewResponse>();
+            CreateMap<Review, ReviewResponse>()
+                .ForMember(dest => dest.employerPhoto, opt => opt.MapFrom(src => src.Employer.User.ProfilePic))
+                .ForMember(dest => dest.employerName, opt => opt.MapFrom(src => src.Employer.User.FirstName + src.Employer.User.LastName));
             CreateMap<Employer, EmployerResponse>()
                 .ForMember(dest => dest.EmployerId, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.User.FirstName))

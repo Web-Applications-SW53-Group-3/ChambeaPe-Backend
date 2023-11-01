@@ -25,6 +25,7 @@ namespace _3._Data.Workers
                 .Include(w => w.Skills)
                 .Include(w => w.Portfolios)
                 .Include(w => w.Reviews)
+                .ThenInclude(w => w.Employer.User)
                 .ToListAsync();
         }
 
@@ -38,6 +39,7 @@ namespace _3._Data.Workers
                 .Include(w => w.Skills)
                 .Include(w => w.Portfolios)
                 .Include(w => w.Reviews)
+                .ThenInclude(w => w.Employer.User)
                 .FirstOrDefaultAsync();
         }
 

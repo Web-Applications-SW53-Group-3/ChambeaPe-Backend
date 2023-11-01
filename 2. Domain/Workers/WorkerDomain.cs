@@ -21,6 +21,18 @@ namespace _2._Domain.Workers
             _userData = userData;
             _mapper = mapper;
         }
+        
+        public async Task<bool> ExistsByWorkerId(int id)
+        {
+            Worker? workerToBeFound = await _workerData.ExistsByIdAsync(id);
+
+            if (workerToBeFound == null)
+            {
+                throw new InvalidWorkerIDException(id.ToString());
+            }
+
+            return true;
+        }
         public async Task<bool> CreateAsync(Worker worker, User user)
         {
             await _userDomain.CreateAsync(user, "W");

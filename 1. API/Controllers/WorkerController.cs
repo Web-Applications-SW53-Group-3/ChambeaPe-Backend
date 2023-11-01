@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using _1._API.Response;
 using AutoMapper;
 using _3._Data.Model;
@@ -9,7 +6,6 @@ using _3._Data.Workers;
 using _2._Domain.Workers;
 using _1._API.Request;
 using _2._Domain.Exceptions;
-using Microsoft.Extensions.Logging;
 
 namespace _1._API.Controllers
 {

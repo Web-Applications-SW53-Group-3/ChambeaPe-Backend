@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using _1._API.Request;
+﻿using _1._API.Request;
 using _1._API.Response;
 using _2._Domain.Exceptions;
 using _2._Domain.Portfolios;
@@ -9,7 +6,6 @@ using _3._Data.Model;
 using _3._Data.Portfolios;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 
 namespace _1._API.Controllers

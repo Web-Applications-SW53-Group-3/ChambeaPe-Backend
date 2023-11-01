@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace _1._API.Response
+﻿namespace _1._API.Response
 {
     public class WorkerResponse
     {
@@ -18,7 +15,7 @@ namespace _1._API.Response
         public string ProfilePic { get; set; } = null!;
         public string Occupation { get; set; } = null!;
         public virtual List<CertificateResponse> Certificates { get; set; } = null!;
-        public virtual List<PortfolioResponse> Portfolios {get; set;} = null!;
+        public virtual List<PortfolioResponse> Portfolio {get; set;} = null!;
         public virtual List<SkillResponse> Skills {get; set;} = null!;
         public virtual List<ReviewResponse> Reviews { get; set; } = null!;
     }

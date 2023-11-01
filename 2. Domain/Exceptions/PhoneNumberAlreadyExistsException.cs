@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _2._Domain.Exceptions
+﻿namespace _2._Domain.Exceptions
 {
     public class PhoneNumberAlreadyExistsException : Exception
     {

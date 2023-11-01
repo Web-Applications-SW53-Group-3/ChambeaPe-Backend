@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using _2._Domain.Exceptions;
+﻿using _2._Domain.Exceptions;
 using _3._Data.Model;
 using _3._Data.Users;
 using AutoMapper;

@@ -2,6 +2,6 @@
 {
     public class PhoneNumberAlreadyExistsException : Exception
     {
-        public PhoneNumberAlreadyExistsException() : base("Phone number already in use"){ }
+        public PhoneNumberAlreadyExistsException() : base("The phone number is already in use") { }
     }
 }

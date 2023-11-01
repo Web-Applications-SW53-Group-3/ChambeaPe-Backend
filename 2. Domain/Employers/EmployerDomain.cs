@@ -20,8 +20,12 @@ namespace _2._Domain.Employers
 
         public async Task<bool> CreateAsync(Employer employer, User user)
         {
-            await _userDomain.CreateAsync(user);
+            await _userDomain.CreateAsync(user, "E");
             User newUser = await _userData.GetByEmailAsync(user.Email);
+            if (newUser == null)
+            {
+                throw new UserRegistrationException();
+            }
             employer.UserId = newUser.Id;
             return await _employerData.CreateAsync(employer);
         }
@@ -29,7 +33,7 @@ namespace _2._Domain.Employers
         public async Task<bool> UpdateAsync(Employer employer, User user, int id)
         {
             Employer employerToBeUpdated = await _employerData.GetByIdAsync(id);
-            bool userUpdated = await _userDomain.UpdateAsync(user, employerToBeUpdated.UserId);
+            bool userUpdated = await _userDomain.UpdateAsync(user, employerToBeUpdated.UserId, "E");
             User updatedUser = await _userData.GetByIdAsync(employerToBeUpdated.UserId);
 
             if (employerToBeUpdated == null)

@@ -76,13 +76,17 @@ namespace _1._API.Controllers
                 await _employerDomain.CreateAsync(employer, user);
                 return Ok(employerRequest);
             }
-            catch (EmailAlreadyExistsException)
+            catch (EmailAlreadyExistsException ex)
             {
-                return BadRequest(new { error = "EmailAlreadyExists", message = "The email is already in use" });
+                return BadRequest(new { error = "EmailAlreadyExists", message = ex.Message });
             }
-            catch (PhoneNumberAlreadyExistsException)
+            catch (PhoneNumberAlreadyExistsException ex)
             {
-                return BadRequest(new { error = "PhoneNumberAlreadyExists", message = "The phone number is already in use" });
+                return BadRequest(new { error = "PhoneNumberAlreadyExists", message = ex.Message });
+            }
+            catch (UserRegistrationException ex)
+            {
+                return BadRequest(new { error = "UserRegistrationError", message = ex.Message });
             }
             catch (Exception ex)
             {

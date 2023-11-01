@@ -72,7 +72,7 @@ namespace _1._API.Controllers
             try
             {
                 var user = _mapper.Map<UserRequest, User>(request);
-                await _userDomain.CreateAsync(user);
+                await _userDomain.CreateAsync(user, "-");
                 return Ok(request);
             }
             catch(EmailAlreadyExistsException)
@@ -97,7 +97,7 @@ namespace _1._API.Controllers
             try
             {
                 var user = _mapper.Map<UserRequest, User>(request);
-                await _userDomain.UpdateAsync(user, id);
+                await _userDomain.UpdateAsync(user, id, "-");
                 return Ok(request);
             }
             catch (EmailAlreadyExistsException)

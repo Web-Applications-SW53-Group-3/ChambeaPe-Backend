@@ -611,10 +611,10 @@ public partial class ChambeaPeContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("Date_updated");
             entity.Property(e => e.Email)
-                .HasMaxLength(30)
+                .HasMaxLength(254)
                 .HasColumnName("email");
             entity.Property(e => e.FirstName)
-                .HasMaxLength(20)
+                .HasMaxLength(50)
                 .HasColumnName("first_name");
             entity.Property(e => e.Description)
                 .HasColumnName("description");
@@ -629,7 +629,7 @@ public partial class ChambeaPeContext : DbContext
             entity.Property(e => e.HasPremium).HasColumnName("has_premium");
             entity.Property(e => e.IsActive).HasColumnName("is_active").HasDefaultValue(true);
             entity.Property(e => e.LastName)
-                .HasMaxLength(20)
+                .HasMaxLength(50)
                 .HasColumnName("last_name");
             entity.Property(e => e.Password)
                 .HasMaxLength(30)

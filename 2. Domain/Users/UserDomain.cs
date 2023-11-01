@@ -30,7 +30,7 @@ namespace _2._Domain.Users
             {
                 throw new PhoneNumberAlreadyExistsException();
             }
-            user.UserRole = "W";
+            user.UserRole = userRole;
             return await _userData.CreateAsync(user);
         }
 

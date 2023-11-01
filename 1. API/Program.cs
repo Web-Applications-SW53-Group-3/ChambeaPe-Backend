@@ -1,4 +1,5 @@
 using _1._API.Mapper;
+using _2._Domain.Employers;
 using _2._Domain.Advertisements;
 using _2._Domain.Certificates;
 using _2._Domain.Portfolios;
@@ -8,6 +9,7 @@ using _2._Domain.Workers;
 using _3._Data.Advertisements;
 using _3._Data.Certificates;
 using _3._Data.Context;
+using _3._Data.Employers;
 using _3._Data.Portfolios;
 using _3._Data.Skills;
 using _3._Data.Users;
@@ -29,6 +31,10 @@ builder.Services.AddScoped<IUserDomain, UserDomain>();
 builder.Services.AddScoped<IWorkerData, WorkerMySQLData>();
 builder.Services.AddScoped<IWorkerDomain, WorkerDomain>();
 
+
+builder.Services.AddScoped<IEmployerData, EmployerMySQLData>();
+builder.Services.AddScoped<IEmployerDomain, EmployerDomain>();
+
 builder.Services.AddScoped<IAdvertisementData, AdvertisementMySQLData>();
 builder.Services.AddScoped<IAdvertisementDomain, AdvertisementDomain>();
 
@@ -40,6 +46,7 @@ builder.Services.AddScoped<ISkillDomain, SkillDomain>();
 
 builder.Services.AddScoped<ICertificateData, CertificateMySQLData>();
 builder.Services.AddScoped<ICertificateDomain, CertificateDomain>();
+
 
 var connectionString = builder.Configuration.GetConnectionString("ChambeaPeDB");
 builder.Services.AddDbContext<ChambeaPeContext>(

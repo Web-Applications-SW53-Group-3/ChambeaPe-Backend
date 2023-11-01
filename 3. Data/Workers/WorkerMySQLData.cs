@@ -38,7 +38,7 @@ namespace _3._Data.Workers
                 .Include(w => w.Skills)
                 .Include(w => w.Portfolios)
                 .Include(w => w.Reviews)
-                .FirstAsync();
+                .FirstOrDefaultAsync();
         }
 
         public async Task<bool> CreateAsync(Worker worker)
@@ -88,8 +88,7 @@ namespace _3._Data.Workers
             }catch (Exception ex)
             {
                 return false;
-            }
-            
+            }    
         }
     }
 }

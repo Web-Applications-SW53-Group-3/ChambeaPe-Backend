@@ -16,7 +16,7 @@ namespace _2._Domain.Users
             _mapper = mapper;
         }
 
-        public async Task<bool> CreateAsync(User user)
+        public async Task<bool> CreateAsync(User user, string userRole)
         {
             User existingEmailUser = await _userData.GetByEmailAsync(user.Email);
             User existingPhoneNumberUser = await _userData.GetByPhoneNumberAsync(user.PhoneNumber);
@@ -30,11 +30,11 @@ namespace _2._Domain.Users
             {
                 throw new PhoneNumberAlreadyExistsException();
             }
-
+            user.UserRole = userRole;
             return await _userData.CreateAsync(user);
         }
 
-        public async Task<bool> UpdateAsync(User user, int id)
+        public async Task<bool> UpdateAsync(User user, int id, string userRole)
         {
             User existingEmailUser = await _userData.GetByEmailAsync(user.Email);
             User existingPhoneNumberUser = await _userData.GetByPhoneNumberAsync(user.PhoneNumber);
@@ -53,7 +53,17 @@ namespace _2._Domain.Users
 
             if (userToBeUpdated != null)
             {
-                _mapper.Map(user, userToBeUpdated);
+                //_mapper.Map(user, userToBeUpdated);
+                userToBeUpdated.UserRole = userRole;
+                userToBeUpdated.FirstName = user.FirstName;
+                userToBeUpdated.LastName = user.LastName;
+                userToBeUpdated.Email = user.Email;
+                userToBeUpdated.PhoneNumber = user.PhoneNumber;
+                userToBeUpdated.Description = user.Description;
+                userToBeUpdated.Birthdate = user.Birthdate;
+                userToBeUpdated.Gender = user.Gender;
+                userToBeUpdated.ProfilePic = user.ProfilePic;
+
                 return await _userData.UpdateAsync(userToBeUpdated, id);
             }
 

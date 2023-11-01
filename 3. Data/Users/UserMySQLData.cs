@@ -48,7 +48,6 @@ namespace _3._Data.Users
         {
             try
             {
-                user.Id = id;
                 user.IsActive = true;
                 user.DateUpdated = DateTime.Now;
                 _context.Users.Update(user);

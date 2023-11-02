@@ -15,6 +15,8 @@ using _3._Data.Skills;
 using _3._Data.Users;
 using _3._Data.Workers;
 using Microsoft.EntityFrameworkCore;
+using _3._Data.Posts;
+using _2._Domain.Posts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +49,8 @@ builder.Services.AddScoped<ISkillDomain, SkillDomain>();
 builder.Services.AddScoped<ICertificateData, CertificateMySQLData>();
 builder.Services.AddScoped<ICertificateDomain, CertificateDomain>();
 
+builder.Services.AddScoped<IPostData, PostMySQLData>();
+builder.Services.AddScoped<IPostDomain, PostDomain>();
 
 var connectionString = builder.Configuration.GetConnectionString("ChambeaPeDB");
 builder.Services.AddDbContext<ChambeaPeContext>(

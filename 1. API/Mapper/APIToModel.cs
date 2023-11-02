@@ -20,6 +20,11 @@ namespace _1._API.Mapper
             CreateMap<CertificateRequest, Certificate>();
             CreateMap<PortfolioRequest, Portfolio>();
             CreateMap<SkillRequest, Skill>();
+            CreateMap<PostRequest, Post>();
+            CreateMap<Post, Post>()
+                .ForMember(dest => dest.Contracts, opt => opt.Ignore())
+                .ForMember(dest => dest.Employer, opt => opt.Ignore())
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
         }
     }
 }

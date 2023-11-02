@@ -136,7 +136,7 @@ namespace _1._API.Controllers
             try
             {
                 await _workerDomain.DeleteAsync(id);
-                return Ok($"Worker with ID: {id} deleted successfuly");
+                return Ok($"Worker with ID: {id} has been deleted successfuly");
             }
             catch (InvalidUserIDException)
             {

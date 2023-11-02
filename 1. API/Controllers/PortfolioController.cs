@@ -28,7 +28,12 @@ namespace _1._API.Controllers
         }
 
         // GET: api/Portfolio
+        /// <summary>
+        /// Get all portfolios of a worker
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("[controller]")]
+        [Produces("application/json")]
         public async Task<ActionResult<List<PortfolioResponse>>> GetAsync()
         {
             try
@@ -45,7 +50,13 @@ namespace _1._API.Controllers
         }
 
         // GET: api/Portfolio/5
+        /// <summary>
+        /// Get a portfolio by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("[controller]/{id}", Name = "GetPortfolio")]
+        [Produces("application/json")]
         public async Task<ActionResult<PortfolioResponse>> GetAsync(int id)
         {
             try
@@ -66,7 +77,14 @@ namespace _1._API.Controllers
         }
 
         // POST: api/worker/id/portfolio
+        /// <summary>
+        /// Post a new portfolio of a worker
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="workerId"></param>
+        /// <returns></returns>
         [HttpPost(template: "worker/{workerId:int}/[controller]")]
+        [Produces("application/json")]
         public async Task<ActionResult> PostAsync([FromBody] PortfolioRequest request, int workerId)
         {
             try
@@ -97,7 +115,14 @@ namespace _1._API.Controllers
         }
 
         // PUT: api/Portfolio/5
+        /// <summary>
+        /// Put a portfolio of a worker by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPut("[controller]/{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult> PutAsync(int id, [FromBody] PortfolioRequest request)
         {
             try
@@ -126,7 +151,13 @@ namespace _1._API.Controllers
         }
 
         // DELETE: api/Portfolio/5
+        /// <summary>
+        /// Delete a portfolio of a worker by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("[controller]/{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult> DeleteAsync(int id)
         {
             try

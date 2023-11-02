@@ -42,7 +42,7 @@ namespace _2._Domain.Posts
             }
 
             List<Post> posts = await _postData.GetByEmployerIdAsync(employerId);
-          
+            
             foreach (Post post in posts) {
                 if(post.Title == newPost.Title)
                 {

@@ -27,7 +27,12 @@ namespace _1._API.Controllers
         }
 
         // GET: api/Skill
+        /// <summary>
+        /// Get all skills of the chambeador
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("[controller]")]
+        [Produces("application/json")]
         public async Task<ActionResult<List<SkillResponse>>> GetAsync()
         {
             try
@@ -44,7 +49,13 @@ namespace _1._API.Controllers
         }
 
         // GET: api/Skill/5
+        /// <summary>
+        /// Get a skill of a chambeador by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("[controller]/{id}", Name = "GetSkill")]
+        [Produces("application/json")]
         public async Task<ActionResult<SkillResponse>> GetAsync(int id)
         {
             try
@@ -65,7 +76,14 @@ namespace _1._API.Controllers
         }
 
         // POST: api/worker/id/skill
+        /// <summary>
+        /// Post a skill of a chambeador 
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="workerId"></param>
+        /// <returns></returns>
         [HttpPost(template: "worker/{workerId:int}/[controller]")]
+        [Produces("application/json")]
         public async Task<ActionResult> PostAsync([FromBody] SkillRequest request, int workerId)
         {
             try
@@ -85,7 +103,14 @@ namespace _1._API.Controllers
         }
 
         // PUT: api/Skill/5
+        /// <summary>
+        /// Put a skill of a chambeador by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPut("[controller]/{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult> PutAsync(int id, [FromBody] SkillRequest request)
         {
             try
@@ -105,7 +130,13 @@ namespace _1._API.Controllers
         }
 
         // DELETE: api/Skill/5
+        /// <summary>
+        /// Delete a skill of a chambeador by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("[controller]/{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult> DeleteAsync(int id)
         {
             try

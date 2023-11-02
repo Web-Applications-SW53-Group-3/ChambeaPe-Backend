@@ -6,6 +6,8 @@ namespace _1._API.Request
     public class CertificateRequest
     {
         [Required]
+        public string CertificateId { get; set; } = null!;
+        [Required]
         [MaxLength(60)]
         public string Name { get; set; } = null!;
         [Required]

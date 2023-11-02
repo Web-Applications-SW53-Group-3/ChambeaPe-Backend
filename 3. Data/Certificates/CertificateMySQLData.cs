@@ -18,9 +18,14 @@ namespace _3._Data.Certificates
             return await _context.Certificates.Where(c => c.IsActive).ToListAsync();
         }
 
-        public async Task<Certificate> GetByIdAsync(int id)
+        public async Task<Certificate?> GetByIdAsync(int id)
         {
             return await _context.Certificates.Where(c => c.IsActive).FirstOrDefaultAsync(c => c.Id == id);
+        }
+
+        public async Task<Certificate?> GetByCertificateIdAsync(string certificateId)
+        {
+            return await _context.Certificates.Where(c => c.IsActive && c.CertificateId == certificateId).FirstOrDefaultAsync();
         }
 
         public async Task<bool> CreateAsync(Certificate certificate)
@@ -44,6 +49,7 @@ namespace _3._Data.Certificates
                 var certificateToBeUpdated = await _context.Certificates.FirstOrDefaultAsync(c => c.Id == id);
                 if (certificateToBeUpdated != null)
                 {
+                    certificateToBeUpdated.CertificateId = certificate.CertificateId;
                     certificateToBeUpdated.Name = certificate.Name;
                     certificateToBeUpdated.ImgUrl = certificate.ImgUrl;
                     certificateToBeUpdated.InstitutionName = certificate.InstitutionName;

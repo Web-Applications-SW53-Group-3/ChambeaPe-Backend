@@ -29,7 +29,7 @@ namespace _3._Data.Workers
                 .ToListAsync();
         }
 
-        public async Task<Worker> GetByIdAsync(int id)
+        public async Task<Worker?> GetByIdAsync(int id)
         {
             return await _context.Workers
                 .Where(w => w.IsActive && w.Id == id)

@@ -29,7 +29,12 @@ namespace _1._API.Controllers
         }
 
         // GET: api/<PostController>
+        /// <summary>
+        /// Get all posts
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("[controller]")]
+        [Produces("application/json")]
         public async Task<ActionResult<List<Post>>> GetAll()
         {
             try
@@ -46,7 +51,14 @@ namespace _1._API.Controllers
         }
 
         // GET api/<PostController>/5
+        /// <summary>
+        /// Get a post of a employer by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="InvalidPostIDException"></exception>
         [HttpGet("[controller]/{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult<Post>> GetByPostId(int id)
         {
             try
@@ -71,7 +83,13 @@ namespace _1._API.Controllers
         }
 
         // GET api/employer/{employerId}/post
+        /// <summary>
+        /// Get all posts of a employer
+        /// </summary>
+        /// <param name="employerId"></param>
+        /// <returns></returns>
         [HttpGet("employer/{employerId}/[controller]")]
+        [Produces("application/json")]
         public async Task<ActionResult<List<Post>>> GetByEmployerId(int employerId)
         {
             try
@@ -88,7 +106,14 @@ namespace _1._API.Controllers
         }
 
         // POST api/<PostController>
+        /// <summary>
+        /// Post a new post of a employer
+        /// </summary>
+        /// <param name="postRequest"></param>
+        /// <param name="employerId"></param>
+        /// <returns></returns>
         [HttpPost("employer/{employerId}/[controller]")]
+        [Produces("application/json")]
         public async Task<ActionResult> Post([FromBody] PostRequest postRequest, int employerId)
         {
             try
@@ -113,7 +138,14 @@ namespace _1._API.Controllers
         }
 
         // PUT api/<PostController>/5
+        /// <summary>
+        /// Post a new post of a employer
+        /// </summary>
+        /// <param name="postRequest"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPut("[controller]/{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult> Put([FromBody] PostRequest postRequest, int id)
         {
             try
@@ -138,7 +170,13 @@ namespace _1._API.Controllers
         }
 
         // DELETE api/<PostController>/5
+        /// <summary>
+        /// Delete a post of a employer by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("[controller]/{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult> Delete(int id)
         {
             try

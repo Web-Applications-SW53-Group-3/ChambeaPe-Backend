@@ -12,7 +12,7 @@ public class AdvertisementDomainTest
 {
     //Todo: happy path 
     [Fact]
-    public async Task Create_ValidData_ResultTrue()
+    public async Task CreateAsync_ValidData_ResultTrue()
     {
         //Arrange
         Advertisement advertisement = new Advertisement()

@@ -23,16 +23,13 @@ namespace _2._Domain.Certificates
         public async Task<bool> CreateAsync(Certificate certificate, int workerId)
         {
             var duplicatedCertificate = await _certificateData.GetByCertificateIdAsync(certificate.CertificateId);
-
+            
             if (duplicatedCertificate != null)
             {
                 throw new DuplicatedCertificateIDException($"Certificate with ID {certificate.CertificateId} already exists");
             }
-
             var existsWorker = await _workerDomain.ExistsByWorkerId(workerId);
-
             if (!existsWorker) return false;
-            
             var worker = await _workerData.GetByIdAsync(workerId);
             certificate.WorkerId = worker.Id;
             return await _certificateData.CreateAsync(certificate);

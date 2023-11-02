@@ -84,6 +84,10 @@ namespace _1._API.Controllers
             {
                 return BadRequest(new { error = "InvalidWorkerID", message = $"The workerId {workerId} is invalid" });
             }
+            catch (DuplicatedCertificateIDException ex)
+            {
+                return BadRequest(new { error = "DuplicatedCertificateID", message = ex.Message });
+            }
         }
         
         // PUT: api/Certificate/5

@@ -4,7 +4,8 @@ namespace _3._Data.Certificates
 {
     public interface ICertificateData
     {
-        Task<Certificate> GetByIdAsync(int id);
+        Task<Certificate?> GetByIdAsync(int id);
+        Task<Certificate?> GetByCertificateIdAsync(string certificateId);
         Task<List<Certificate>> GetAllAsync();
         Task<bool> CreateAsync(Certificate certificate);
         Task<bool> UpdateAsync(Certificate certificate, int id);

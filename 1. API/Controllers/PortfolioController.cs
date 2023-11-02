@@ -85,6 +85,15 @@ namespace _1._API.Controllers
             {
                 return BadRequest(new { error = "InvalidWorkerID", message = $"The workerId {workerId} is invalid" });
             }
+            catch(DuplicatedPortfolioImageException ex)
+            {
+                return BadRequest(new { error = "DuplicatedPortfolioImage", message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error has occurred: {ex.Message}");
+                return BadRequest();
+            }
         }
 
         // PUT: api/Portfolio/5
@@ -105,6 +114,15 @@ namespace _1._API.Controllers
             {
                 return NotFound(new { error = "InvalidPortfolioID", message = $"The portfolio ID {id} is invalid" });
             }
+            catch (DuplicatedPortfolioImageException ex)
+            {
+                return BadRequest(new { error = "DuplicatedPortfolioImage", message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error has occurred: {ex.Message}");
+                return BadRequest();
+            }
         }
 
         // DELETE: api/Portfolio/5
@@ -123,6 +141,11 @@ namespace _1._API.Controllers
             catch (InvalidPortfolioIDException)
             {
                 return NotFound(new { error = "InvalidPortfolioID", message = $"The portfolio ID {id} is invalid" });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error has occurred: {ex.Message}");
+                return BadRequest();
             }
         }
     }

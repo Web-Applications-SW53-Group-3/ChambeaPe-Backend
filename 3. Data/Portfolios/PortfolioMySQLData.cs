@@ -75,6 +75,18 @@ namespace _3._Data.Portfolios
                 return false;
             }
         }
+
+        public async Task<bool> ExistsByUrl(Portfolio portfolioToBeChecked)
+        {
+            Portfolio? portfolio = await _context.Portfolios
+                .Where(p => p.IsActive && p.ImageUrl== portfolioToBeChecked.ImageUrl)
+                .FirstOrDefaultAsync();
+            if(portfolio != null)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 
 }

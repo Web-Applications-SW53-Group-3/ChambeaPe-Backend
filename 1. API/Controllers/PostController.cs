@@ -105,6 +105,10 @@ namespace _1._API.Controllers
             {
                 return BadRequest(new { error = "InvalidEmployerID", message = ex.Message });
             }
+            catch(PostLimitExceededException ex)
+            {
+                return BadRequest(new { error = "PostCreationLimit", message = ex.Message });
+            }
             catch(Exception ex)
             {
                 _logger.LogError(ex.Message);

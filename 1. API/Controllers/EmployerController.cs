@@ -45,7 +45,7 @@ namespace _1._API.Controllers
 
         // GET api/<EmployerController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult> Get(int id)
+        public async Task<ActionResult<EmployerResponse>> Get(int id)
         {
             try
             {

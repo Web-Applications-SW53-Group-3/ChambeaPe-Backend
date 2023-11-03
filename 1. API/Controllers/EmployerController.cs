@@ -55,7 +55,7 @@ namespace _1._API.Controllers
         /// 
         [HttpGet("{id}")]
         [Produces( "application/json")]
-        public async Task<ActionResult> Get(int id)
+        public async Task<ActionResult<EmployerResponse>> Get(int id)
         {
             try
             {

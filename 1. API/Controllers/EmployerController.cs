@@ -27,7 +27,12 @@ namespace _1._API.Controllers
         }
 
         // GET: api/<EmployerController>
+        /// <summary>
+        /// Get all employers in the database
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
+        [Produces( "application/json")]
         public async Task<ActionResult<List<Employer>>> GetAsync()
         {
             try
@@ -44,7 +49,12 @@ namespace _1._API.Controllers
         }
 
         // GET api/<EmployerController>/5
+        /// <summary>
+        /// Get an employer by ID
+        /// </summary>
+        /// 
         [HttpGet("{id}")]
+        [Produces( "application/json")]
         public async Task<ActionResult<EmployerResponse>> Get(int id)
         {
             try
@@ -65,7 +75,13 @@ namespace _1._API.Controllers
         }
 
         // POST api/<EmployerController>
+        /// <summary>
+        /// Post a new employer
+        /// </summary>
+        /// <param name="employerRequest"></param>
+        /// <returns></returns>
         [HttpPost]
+        [Produces( "application/json")] 
         public async Task<ActionResult> Post([FromBody] EmployerRequest employerRequest)
         {
             try
@@ -96,7 +112,14 @@ namespace _1._API.Controllers
         }
 
         // PUT api/<EmployerController>/5
+        /// <summary>
+        /// Put an employer by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="employerRequest"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
+        [Produces( "application/json")]
         public async Task<ActionResult> Put(int id, [FromBody] EmployerRequest employerRequest)
         {
             try
@@ -129,7 +152,13 @@ namespace _1._API.Controllers
         }
 
         // DELETE api/<EmployerController>/5
+        /// <summary>
+        /// Delete an employer by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
+        [Produces( "application/json")]
         public async Task<ActionResult> Delete(int id)
         {
             try

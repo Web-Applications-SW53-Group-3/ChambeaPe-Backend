@@ -25,9 +25,12 @@ namespace _1._API.Controllers
             _mapper = mapper;
             _logger = logger;
         }
-
+        /// <summary>
+        /// Get all the certificates in the database 
+        /// </summary>
         // GET: api/Certificate
         [HttpGet("[controller]")]
+        [Produces( "application/json")]
         public async Task<ActionResult<List<CertificateResponse>>> GetAsync()
         {
             try
@@ -44,7 +47,12 @@ namespace _1._API.Controllers
         }
 
         // GET: api/Certificate/5
+        /// <summary>
+        /// Get a specific certificate by ID
+        /// </summary>
+        /// <param name="id"></param>
         [HttpGet("[controller]/{id}", Name = "GetCertificate")]
+        [Produces( "application/json")]
         public async Task<ActionResult<CertificateResponse>> GetAsync(int id)
         {
             try
@@ -65,7 +73,12 @@ namespace _1._API.Controllers
         }
         
         // POST: api/worker/id/certificate
+        /// <summary>
+        /// Create a new certificate
+        /// </summary>
+        /// 
         [HttpPost(template: "worker/{workerId:int}/[controller]")]
+        [Produces( "application/json")]
         public async Task<ActionResult> PostAsync([FromBody] CertificateRequest request, int workerId)
         {
             try
@@ -84,10 +97,20 @@ namespace _1._API.Controllers
             {
                 return BadRequest(new { error = "InvalidWorkerID", message = $"The workerId {workerId} is invalid" });
             }
+            catch (DuplicatedCertificateIDException ex)
+            {
+                return BadRequest(new { error = "DuplicatedCertificateID", message = ex.Message });
+            }
         }
         
         // PUT: api/Certificate/5
+        /// <summary>
+        /// Put a specific certificate by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="request"></param>
         [HttpPut("[controller]/{id}")]
+        [Produces( "application/json")]
         public async Task<ActionResult> PutAsync(int id, [FromBody] CertificateRequest request)
         {
             try
@@ -107,7 +130,11 @@ namespace _1._API.Controllers
         }
 
         // DELETE: api/Certificate/5
+        /// <summary>
+        /// Delete a specific certificate by ID
+        /// </summary>
         [HttpDelete("[controller]/{id}")]
+        [Produces( "application/json")]
         public async Task<ActionResult> DeleteAsync(int id)
         {
             try

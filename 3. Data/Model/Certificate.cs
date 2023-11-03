@@ -5,6 +5,7 @@ namespace _3._Data.Model;
 
 public partial class Certificate : ModelBase
 {
+    public string CertificateId { get; set; } = null!;
 
     public string Name { get; set; } = null!;
 

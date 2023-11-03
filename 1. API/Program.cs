@@ -1,3 +1,4 @@
+using System.Reflection;
 using _1._API.Mapper;
 using _2._Domain.Employers;
 using _2._Domain.Advertisements;
@@ -15,6 +16,9 @@ using _3._Data.Skills;
 using _3._Data.Users;
 using _3._Data.Workers;
 using Microsoft.EntityFrameworkCore;
+using _3._Data.Posts;
+using _2._Domain.Posts;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +27,30 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "ChambeaPe API",
+        Description = "API to manage data for ChambeaPe",
+        TermsOfService = new Uri("https://web-applications-sw53-group-3.github.io/Landing-Page/"),
+        Contact = new OpenApiContact
+        {
+            Name = "Example Contact",
+            Url = new Uri("https://web-applications-sw53-group-3.github.io/Landing-Page/")
+        },
+        License = new OpenApiLicense
+        {
+            Name = "Example License",
+            Url = new Uri("https://web-applications-sw53-group-3.github.io/Landing-Page/")
+        }
+    });
+    
+    // using System.Reflection;
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+});
 
 builder.Services.AddScoped<IUserData, UserMySQLData>();
 builder.Services.AddScoped<IUserDomain, UserDomain>();
@@ -47,6 +74,8 @@ builder.Services.AddScoped<ISkillDomain, SkillDomain>();
 builder.Services.AddScoped<ICertificateData, CertificateMySQLData>();
 builder.Services.AddScoped<ICertificateDomain, CertificateDomain>();
 
+builder.Services.AddScoped<IPostData, PostMySQLData>();
+builder.Services.AddScoped<IPostDomain, PostDomain>();
 
 var connectionString = builder.Configuration.GetConnectionString("ChambeaPeDB");
 builder.Services.AddDbContext<ChambeaPeContext>(

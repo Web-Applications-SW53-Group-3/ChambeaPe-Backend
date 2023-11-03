@@ -28,7 +28,12 @@ namespace _1._API.Controllers
         }
 
         // GET: api/<UserController>
+        /// <summary>
+        /// Get all users 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
+        [Produces("application/json")]
         public async Task<ActionResult<List<UserResponse>>> GetAsync()
         {
             try
@@ -46,7 +51,13 @@ namespace _1._API.Controllers
         }
 
         // GET api/<UserController>/5
+        /// <summary>
+        /// Get a user by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult<UserResponse>> GetAsync(int id)
         {
             try
@@ -66,7 +77,13 @@ namespace _1._API.Controllers
         }
 
         // POST api/<UserController>
+        /// <summary>
+        /// Post a user
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost]
+        [Produces("application/json")]
         public async Task<ActionResult> PostAsync([FromBody] UserRequest request)
         {
             try
@@ -91,7 +108,14 @@ namespace _1._API.Controllers
         }
 
         // PUT api/<UserController>/5
+        /// <summary>
+        /// Put a user by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult> PutAsync(int id, [FromBody] UserRequest request)
         {
             try
@@ -116,7 +140,13 @@ namespace _1._API.Controllers
         }
 
         // DELETE api/<UserController>/5
+        /// <summary>
+        /// Delete a user by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult> DeleteAsync(int id)
         {
             try

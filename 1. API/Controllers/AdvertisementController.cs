@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace _1._API.Controllers
 {
+
     [Route("api/")]
     [ApiController]
     public class AdvertisementController : ControllerBase
@@ -25,9 +26,12 @@ namespace _1._API.Controllers
             _mapper = mapper;
             _logger = logger;
         }
-
+        /// <summary>
+        /// Get all the advertisements in the database 
+        /// </summary>
         // GET: api/Advertisement
         [HttpGet("[controller]")]
+        [Produces( "application/json")]
         public async Task<ActionResult<List<AdvertisementResponse>>> GetAsync()
         {
             try
@@ -42,8 +46,11 @@ namespace _1._API.Controllers
                 return BadRequest();
             }
         }
-
+        /// <summary>
+        /// Get a specific advertisement by ID
+        /// </summary>
         // GET: api/Advertisement/5
+        [Produces( "application/json")]
         [HttpGet("[controller]/{id}", Name = "GetAdvertisement")]
         public async Task<ActionResult<AdvertisementResponse>> GetAsync(int id)
         {
@@ -63,9 +70,15 @@ namespace _1._API.Controllers
                 return BadRequest();
             }
         }
-
+        
         // POST: api/worker/id/advertisement
+        /// <summary>
+        /// Create a new advertisement for a specific worker
+        /// </summary>
+        /// <response code="201">Returns the newly created advertisement</response>
+        /// <response code="400">If the workerId is invalid</response>
         [HttpPost(template: "worker/{workerId:int}/[controller]")]
+        [Produces( "application/json")]
         public async Task<ActionResult> PostAsync([FromBody] AdvertisementRequest request, int workerId)
         {
             try
@@ -85,7 +98,11 @@ namespace _1._API.Controllers
         }
 
         // PUT: api/Advertisement/5
+        /// <summary>
+        /// Update a specific advertisement by ID
+        /// </summary>
         [HttpPut("[controller]/{id}")]
+        [Produces( "application/json")]
         public async Task<ActionResult> PutAsync(int id, [FromBody] AdvertisementRequest request)
         {
             try
@@ -105,7 +122,12 @@ namespace _1._API.Controllers
         }
 
         // DELETE: api/Advertisement/5
+        /// <summary>
+        /// Delete a specific advertisement by ID 
+        /// </summary>
+        // GET: api/Advertisement
         [HttpDelete("[controller]/{id}")]
+        [Produces( "application/json")]
         public async Task<ActionResult> DeleteAsync(int id)
         {
             try

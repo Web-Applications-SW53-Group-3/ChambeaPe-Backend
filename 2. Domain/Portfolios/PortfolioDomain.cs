@@ -20,10 +20,16 @@ namespace _2._Domain.Portfolios
         public async Task<bool> CreateAsync(Portfolio portfolio, int workerId)
         {
             var existsWorker = await _workerDomain.ExistsByWorkerId(workerId);
+            bool existsPortfolioByUrl = await _portfolioData.ExistsByUrl(portfolio);
 
             if (!existsWorker)
             {
                 return false;
+            }
+
+            if (existsPortfolioByUrl)
+            {
+                throw new DuplicatedPortfolioImageException("Duplicated portfolio image");
             }
 
             portfolio.WorkerId = workerId;
@@ -33,10 +39,16 @@ namespace _2._Domain.Portfolios
         public async Task<bool> UpdateAsync(Portfolio portfolio, int id)
         {
             Portfolio portfolioToBeUpdated = await _portfolioData.GetByIdAsync(id);
+            bool existsPortfolioByUrl = await _portfolioData.ExistsByUrl(portfolio);
 
             if (portfolioToBeUpdated == null)
             {
                 throw new InvalidPortfolioIDException();
+            }
+
+            if (existsPortfolioByUrl)
+            {
+                throw new DuplicatedPortfolioImageException("Duplicated portfolio image");
             }
 
             return await _portfolioData.UpdateAsync(portfolio, id);

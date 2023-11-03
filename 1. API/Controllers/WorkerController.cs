@@ -26,7 +26,12 @@ namespace _1._API.Controllers
         }
 
         // GET: api/<WorkerController>
+        /// <summary>
+        /// Get all workers
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
+        [Produces("application/json")]
         public async Task<ActionResult<List<WorkerResponse>>> GetAsync()
         {
             try
@@ -43,7 +48,13 @@ namespace _1._API.Controllers
         }
 
         // GET api/<WorkerController>/5
+        /// <summary>
+        /// Get a worker by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
+        [Produces("application/json")]
         public async Task<ActionResult<WorkerResponse>> Get(int id)
         {
             try
@@ -65,6 +76,11 @@ namespace _1._API.Controllers
         }
 
         // POST api/<WorkerController>
+        /// <summary>
+        /// Post a worker
+        /// </summary>
+        /// <param name="workerRequest"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] WorkerRequest workerRequest)
         {
@@ -97,6 +113,12 @@ namespace _1._API.Controllers
         }
 
         // PUT api/<WorkerController>/5
+        /// <summary>
+        /// Put a worker by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="workerRequest"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromBody] WorkerRequest workerRequest)
         {
@@ -130,13 +152,18 @@ namespace _1._API.Controllers
         }
 
         // DELETE api/<WorkerController>/5
+        /// <summary>
+        /// Delete a worker by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             try
             {
                 await _workerDomain.DeleteAsync(id);
-                return Ok($"Worker with ID: {id} deleted successfuly");
+                return Ok($"Worker with ID: {id} has been deleted successfuly");
             }
             catch (InvalidUserIDException)
             {

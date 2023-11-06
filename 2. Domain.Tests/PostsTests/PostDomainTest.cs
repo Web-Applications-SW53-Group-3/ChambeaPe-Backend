@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Xunit;
 using _2._Domain.Posts;
 using _3._Data.Model;
@@ -36,9 +37,8 @@ public class PostDomainTests
         Assert.True(result);
     }
 
-    // Unhappy Path: CreateAsync - Invalid Employer
     [Fact]
-    public async Task CreateAsync_InvalidEmployer_ThrowsException()
+    public async Task CreateAsync_PostLimitExceeded_ThrowsPostLimitExceededException()
     {
         // Arrange
         var postDataMock = Substitute.For<IPostData>();
@@ -50,10 +50,51 @@ public class PostDomainTests
         var newPost = new Post();
         var employerId = 1;
 
-        employerDataMock.GetByIdAsync(employerId).Returns(Task.FromResult((Employer)null));
+        // Simular un empleador existente
+        var employer = new Employer
+        {
+            User = new User { FirstName = "John", LastName = "Doe" }
+        };
+        employerDataMock.GetByIdAsync(employerId).Returns(Task.FromResult(employer));
+
+        // Simular la creación de un post hace menos de 24 horas
+        var recentPost = new Post { DateCreated = DateTime.Now.AddHours(-12) };
+        postDataMock.GetByEmployerIdAsync(employerId).Returns(Task.FromResult(new List<Post> { recentPost }));
 
         // Act and Assert
-        await Assert.ThrowsAsync<InvalidEmployerIDException>(async () =>
+        await Assert.ThrowsAsync<PostLimitExceededException>(async () =>
+        {
+            await postDomain.CreateAsync(newPost, employerId);
+        });
+    }
+    
+
+    [Fact]
+    public async Task CreateAsync_DuplicatedPostTitle_ThrowsDuplicatedPostException()
+    {
+        // Arrange
+        var postDataMock = Substitute.For<IPostData>();
+        var employerDataMock = Substitute.For<IEmployerData>();
+        var mapper = Substitute.For<IMapper>();
+
+        var postDomain = new PostDomain(postDataMock, mapper, employerDataMock);
+
+        var newPost = new Post();
+        var employerId = 1;
+
+        // Simular un empleador existente
+        var employer = new Employer
+        {
+            User = new User { FirstName = "John", LastName = "Doe" }
+        };
+        employerDataMock.GetByIdAsync(employerId).Returns(Task.FromResult(employer));
+
+        // Simular que ya existe un post con el mismo título
+        var existingPost = new Post { Title = newPost.Title };
+        postDataMock.GetByEmployerIdAsync(employerId).Returns(Task.FromResult(new List<Post> { existingPost }));
+
+        // Act and Assert
+        await Assert.ThrowsAsync<DuplicatedPostException>(async () =>
         {
             await postDomain.CreateAsync(newPost, employerId);
         });
@@ -64,30 +105,25 @@ public class PostDomainTests
     public async Task UpdateAsync_ValidData_ReturnsTrue()
     {
         // Arrange
-        Post postTobeUpdated = new Post()
+        var postDataMock = Substitute.For<IPostData>();
+        var employerDataMock = Substitute.For<IEmployerData>();
+        var mapper = Substitute.For<IMapper>();
+
+        var postDomain = new PostDomain(postDataMock, mapper, employerDataMock);
+
+        var postToBeUpdated = new Post
         {
             Id = 1,
             Title = "Title",
             Subtitle = "Subtitle",
             Description = "Description"
         };
-        Post post = new Post()
-        {
-            Id = 1,
-            Title = "Title2",
-            Subtitle = "Subtitle2",
-            Description = "Description2"
-        };
-        var postDataMock = Substitute.For<IPostData>();
-        var employerDataMock = Substitute.For<IEmployerData>();
-        var mapper = Substitute.For<IMapper>();
-        var postDomain = new PostDomain(postDataMock, mapper, employerDataMock);
-        
-        postDataMock.GetByPostIdAsync(postTobeUpdated.Id).Returns(Task.FromResult(post));
-        postDataMock.UpdateAsync(postTobeUpdated).Returns(true);
+
+        postDataMock.GetByPostIdAsync(postToBeUpdated.Id).Returns(Task.FromResult(postToBeUpdated));
+        postDataMock.UpdateAsync(postToBeUpdated).Returns(true);
 
         // Act
-        var result = await postDomain.UpdateAsync(postTobeUpdated, postTobeUpdated.Id);
+        var result = await postDomain.UpdateAsync(postToBeUpdated, postToBeUpdated.Id);
 
         // Assert
         Assert.True(result);
@@ -99,7 +135,6 @@ public class PostDomainTests
     {
         // Arrange
         var postDataMock = Substitute.For<IPostData>();
-        
         var employerDataMock = Substitute.For<IEmployerData>();
         var mapper = Substitute.For<IMapper>();
 
@@ -134,6 +169,10 @@ public class PostDomainTests
 
         // Act
         var result = await postDomain.DeleteAsync(postId);
+
+        // Assert
+        Assert.True(result);
+    }
 
     // Unhappy Path: DeleteAsync - Invalid Post
     [Fact]

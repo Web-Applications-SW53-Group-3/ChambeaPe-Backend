@@ -9,5 +9,6 @@ namespace _3._Data.Portfolios
         Task<bool> CreateAsync(Portfolio portfolio);
         Task<bool> UpdateAsync(Portfolio portfolio, int id);
         Task<bool> DeleteAsync(int id);
+        Task<bool> ExistsByUrl(Portfolio portfolio);
     }
 }

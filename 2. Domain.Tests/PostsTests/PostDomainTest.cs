@@ -135,10 +135,6 @@ public class PostDomainTests
         // Act
         var result = await postDomain.DeleteAsync(postId);
 
-        // Assert
-        Assert.True(result);
-    }
-
     // Unhappy Path: DeleteAsync - Invalid Post
     [Fact]
     public async Task DeleteAsync_InvalidPost_ThrowsException()

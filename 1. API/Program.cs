@@ -134,7 +134,7 @@ app.UseHttpsRedirection();
 app.UseCors(builder =>
 {
     builder
-        .SetIsOriginAllowed(_ => true)
+        .WithOrigins("https://localhost:5173")
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials();

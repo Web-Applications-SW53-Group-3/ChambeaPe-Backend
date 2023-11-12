@@ -20,6 +20,8 @@ using _3._Data.Posts;
 using _2._Domain.Posts;
 using Microsoft.OpenApi.Models;
 using _1._API.Hubs;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using _3._Data.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,7 +49,7 @@ builder.Services.AddSwaggerGen(options =>
             Url = new Uri("https://web-applications-sw53-group-3.github.io/Landing-Page/")
         }
     });
-    
+
     // using System.Reflection;
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
@@ -97,10 +99,19 @@ builder.Services.AddAutoMapper(
         typeof(APIToModel)
 );
 
-builder.Logging.AddFile("Logs/chambeape-{Date}.txt", 
+builder.Logging.AddFile("Logs/chambeape-{Date}.txt",
     outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}");
 
 builder.Services.AddSignalR();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/account/login";
+        options.LogoutPath = "/account/logout";
+    });
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -117,6 +128,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
 
 app.UseCors(builder =>
@@ -127,6 +139,8 @@ app.UseCors(builder =>
         .AllowAnyHeader()
         .AllowCredentials();
 });
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -134,7 +134,7 @@ app.UseHttpsRedirection();
 app.UseCors(builder =>
 {
     builder
-        .WithOrigins("https://localhost:5173")
+        .WithOrigins("http://localhost:5173", "https://chambeapeweb.web.app")
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials();

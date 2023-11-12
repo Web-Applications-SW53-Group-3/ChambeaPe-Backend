@@ -19,6 +19,7 @@ using Microsoft.EntityFrameworkCore;
 using _3._Data.Posts;
 using _2._Domain.Posts;
 using Microsoft.OpenApi.Models;
+using _1._API.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -99,6 +100,8 @@ builder.Services.AddAutoMapper(
 builder.Logging.AddFile("Logs/chambeape-{Date}.txt", 
     outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}");
 
+builder.Services.AddSignalR();
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -118,13 +121,17 @@ app.UseHttpsRedirection();
 
 app.UseCors(builder =>
 {
-    builder.AllowAnyOrigin();
-    builder.AllowAnyMethod();
-    builder.AllowAnyHeader();
+    builder
+        .SetIsOriginAllowed(_ => true)
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials();
 });
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<ChatHub>("/chatHub");
 
 app.Run();

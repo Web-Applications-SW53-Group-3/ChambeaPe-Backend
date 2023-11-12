@@ -20,19 +20,20 @@ public class AccountController : Controller
         var user = await _userData.GetByEmailAsync(loginRequest.Email);
         if (user == null)
         {
-            return BadRequest($"Email {loginRequest.Email} does not exist");
+            return BadRequest(new { error = "EmailNotFound", message = $"Email {loginRequest.Email} does not exist" });
         }
 
         if(user.Password != loginRequest.Password)
         {
-            return BadRequest($"Incorrect password");
+            return BadRequest(new { error = "IncorrectPassword", message = "Incorrect password" });
         }
 
         var claims = new[]
         {
             new Claim(ClaimTypes.Email, loginRequest.Email),
             new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
-            new Claim(ClaimTypes.Role, user.UserRole)
+            new Claim(ClaimTypes.Role, user.UserRole),
+            new Claim("UserId", user.Id.ToString())
         };
 
         var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -41,7 +42,7 @@ public class AccountController : Controller
 
         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-        return Ok(new { success = true, message = "Login successful" });
+        return Ok(new { success = true, message = "Login successful", claims });
     }
 
     [HttpGet]

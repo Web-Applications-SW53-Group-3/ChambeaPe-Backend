@@ -7,6 +7,7 @@
     <RootNamespace>_1._API</RootNamespace>
 	<GenerateRuntimeConfigurationFiles>True</GenerateRuntimeConfigurationFiles>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <UserSecretsId>a09ffad1-6328-4f0e-bbda-73380c50b0e5</UserSecretsId>
 
   </PropertyGroup>
 
@@ -14,11 +15,13 @@
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.12" />
+    <PackageReference Include="Microsoft.Azure.SignalR" Version="1.22.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.12">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="Owin.Security.AesDataProtectorProvider" Version="1.2.4" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
     <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />

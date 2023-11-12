@@ -22,6 +22,7 @@ using Microsoft.OpenApi.Models;
 using _1._API.Hubs;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using _3._Data.Model;
+using Owin.Security.AesDataProtectorProvider;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -102,7 +103,7 @@ builder.Services.AddAutoMapper(
 builder.Logging.AddFile("Logs/chambeape-{Date}.txt",
     outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}");
 
-builder.Services.AddSignalR();
+builder.Services.AddSignalR().AddAzureSignalR();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>

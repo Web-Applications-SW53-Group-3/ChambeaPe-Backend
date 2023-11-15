@@ -2,6 +2,7 @@
 using _3._Data.Model;
 using _3._Data.Users;
 using AutoMapper;
+using BCrypt.Net;
 
 namespace _2._Domain.Users
 {
@@ -30,6 +31,7 @@ namespace _2._Domain.Users
             {
                 throw new PhoneNumberAlreadyExistsException();
             }
+            user.Password = EncryptPassword(user.Password);
             user.UserRole = userRole;
             return await _userData.CreateAsync(user);
         }
@@ -63,6 +65,7 @@ namespace _2._Domain.Users
                 userToBeUpdated.Birthdate = user.Birthdate;
                 userToBeUpdated.Gender = user.Gender;
                 userToBeUpdated.ProfilePic = user.ProfilePic;
+                userToBeUpdated.Password = EncryptPassword(user.Password);
 
                 return await _userData.UpdateAsync(userToBeUpdated, id);
             }
@@ -80,6 +83,18 @@ namespace _2._Domain.Users
             }
             
             throw new InvalidUserIDException("User");
+        }
+
+        private string EncryptPassword(string password)
+        {
+            string salt = BCrypt.Net.BCrypt.GenerateSalt();
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password, salt);
+            return hashedPassword;
+        }
+
+        public bool VerifyPassword(string enteredPassword, string hashedPassword)
+        {
+            return BCrypt.Net.BCrypt.Verify(enteredPassword, hashedPassword);
         }
     }
 }

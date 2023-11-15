@@ -632,7 +632,7 @@ public partial class ChambeaPeContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("last_name");
             entity.Property(e => e.Password)
-                .HasMaxLength(30)
+                .HasMaxLength(60)
                 .HasColumnName("password");
             entity.Property(e => e.PhoneNumber).HasColumnName("phone_number").HasMaxLength(30);
             entity.Property(e => e.ProfilePic)

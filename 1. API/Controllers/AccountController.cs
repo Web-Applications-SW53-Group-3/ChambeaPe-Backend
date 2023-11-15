@@ -1,4 +1,5 @@
 ﻿using _1._API.Request;
+using _2._Domain.Users;
 using _3._Data.Users;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -8,9 +9,11 @@ using System.Security.Claims;
 public class AccountController : Controller
 {
     private readonly IUserData _userData;
-    public AccountController(IUserData userData)
+    private readonly IUserDomain _userDomain;
+    public AccountController(IUserData userData, IUserDomain userDomain)
     {
         _userData = userData;
+        _userDomain = userDomain;
     }
 
     [HttpPost]
@@ -22,8 +25,8 @@ public class AccountController : Controller
         {
             return BadRequest(new { error = "EmailNotFound", message = $"Email {loginRequest.Email} does not exist" });
         }
-
-        if(user.Password != loginRequest.Password)
+        string hashedPassword = user.Password;
+        if(!_userDomain.VerifyPassword(loginRequest.Password, hashedPassword))
         {
             return BadRequest(new { error = "IncorrectPassword", message = "Incorrect password" });
         }

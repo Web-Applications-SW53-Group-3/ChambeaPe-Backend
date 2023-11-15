@@ -7,5 +7,6 @@ namespace _2._Domain.Users
         Task<bool> CreateAsync(User user, string userRole);
         Task<bool> UpdateAsync(User user, int id, string userRole);
         Task<bool> DeleteAsync(int id);
+        bool VerifyPassword(string enteredPassword, string hashedPassword);
     }
 }

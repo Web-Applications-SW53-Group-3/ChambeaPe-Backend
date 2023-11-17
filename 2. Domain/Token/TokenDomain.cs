@@ -46,13 +46,11 @@ namespace _2._Domain.Token
                 }
                 else
                 {
-                    // Throw 401-Unauthorized error
-                    throw new InvalidOperationException("Invalid Token");
+                    return null;
                 }
             }
             catch (Exception)
             {
-                // Throw 401-Unauthorized error
                 return null;
             }
         }

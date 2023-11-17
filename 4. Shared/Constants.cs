@@ -2,6 +2,6 @@
 {
     public class Constants
     {
-        public const string SecretKey = "ChambeaPe-Conocraft-Secret-Key";
+        public const string SecretKey = "ChambeaPe-Conocraft-Ultra-Mega-Secret-Key-XD";
     }
 }

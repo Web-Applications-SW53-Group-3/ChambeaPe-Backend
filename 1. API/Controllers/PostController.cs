@@ -1,4 +1,5 @@
-﻿using _1._API.Request;
+﻿using _1._API.Filter;
+using _1._API.Request;
 using _1._API.Response;
 using _2._Domain.Exceptions;
 using _2._Domain.Posts;
@@ -33,6 +34,7 @@ namespace _1._API.Controllers
         /// Get all posts
         /// </summary>
         /// <returns></returns>
+        [AuthorizeFilter("E")]
         [HttpGet("[controller]")]
         [Produces("application/json")]
         public async Task<ActionResult<List<Post>>> GetAll()

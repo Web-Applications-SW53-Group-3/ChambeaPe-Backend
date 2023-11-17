@@ -4,6 +4,7 @@ using _2._Domain.Users;
 using _3._Data.Users;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -19,7 +20,7 @@ public class AccountController : Controller
         _userDomain = userDomain;
         _tokenDomain = tokenDomain;
     }
-
+    [AllowAnonymous]
     [HttpPost]
     [Route("/account/login")]
     public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
@@ -32,7 +33,7 @@ public class AccountController : Controller
         string hashedPassword = user.Password;
         if(!_userDomain.VerifyPassword(loginRequest.Password, hashedPassword))
         {
-            return BadRequest(new { error = "IncorrectPassword", message = "Incorrect password" });
+            return BadRequest(new { error = "InvalidCredentials", message = "Incorrect user or password" });
         }
 
         var claims = new[]

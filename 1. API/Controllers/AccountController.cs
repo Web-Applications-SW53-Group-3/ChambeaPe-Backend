@@ -52,7 +52,7 @@ public class AccountController : Controller
 
         var token = _tokenDomain.GenerateJwtToken(claims);
 
-        return Ok(new {message = "Login successful", token = token});
+        return Ok(new {success = true, message = "Login successful", token = token});
     }
 
     [HttpGet]

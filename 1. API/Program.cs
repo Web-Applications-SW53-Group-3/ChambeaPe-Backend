@@ -23,6 +23,8 @@ using _1._API.Hubs;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using _3._Data.Model;
 using Owin.Security.AesDataProtectorProvider;
+using _1._API.Middleware;
+using _2._Domain.Token;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -81,6 +83,8 @@ builder.Services.AddScoped<ICertificateDomain, CertificateDomain>();
 builder.Services.AddScoped<IPostData, PostMySQLData>();
 builder.Services.AddScoped<IPostDomain, PostDomain>();
 
+builder.Services.AddScoped<ITokenDomain, TokenDomain>();
+
 var connectionString = builder.Configuration.GetConnectionString("ChambeaPeDB");
 builder.Services.AddDbContext<ChambeaPeContext>(
     dbContextOptions =>
@@ -112,7 +116,14 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LogoutPath = "/account/logout";
     });
 
-builder.Services.AddAuthorization();
+
+//builder.Services.AddAuthorization(options =>
+//    {
+//        options.AddPolicy("Employer", policy => policy.RequireRole("E"));
+//        options.AddPolicy("Worker", policy => policy.RequireRole("W"));
+//        options.AddPolicy("Admin", policy => policy.RequireRole("A"));
+//    }
+//);
 
 var app = builder.Build();
 
@@ -140,6 +151,8 @@ app.UseCors(builder =>
         .AllowAnyHeader()
         .AllowCredentials();
 });
+
+app.UseMiddleware<AuthenticationMiddleware>();
 
 app.UseAuthentication();
 

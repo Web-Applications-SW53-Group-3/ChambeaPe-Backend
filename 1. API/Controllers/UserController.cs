@@ -1,10 +1,12 @@
-﻿using _1._API.Request;
+﻿using _1._API.Filter;
+using _1._API.Request;
 using _1._API.Response;
 using _2._Domain.Exceptions;
 using _2._Domain.Users;
 using _3._Data.Model;
 using _3._Data.Users;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -12,6 +14,7 @@ namespace _1._API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AuthorizeFilter()]
     public class UserController : ControllerBase
     {
         private IUserData _userData;

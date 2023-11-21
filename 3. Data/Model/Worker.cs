@@ -21,6 +21,7 @@ public partial class Worker : ModelBase
     public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
 
     public virtual ICollection<Skill> Skills { get; set; } = new List<Skill>();
+    public virtual ICollection<Postulation> Postulations { get; set; } = new List<Postulation>();
 
     public virtual User User { get; set; } = null!;
 }

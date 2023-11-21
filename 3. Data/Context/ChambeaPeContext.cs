@@ -54,6 +54,8 @@ public partial class ChambeaPeContext : DbContext
 
     public virtual DbSet<Worker> Workers { get; set; }
 
+    public DbSet<Postulation> Postulations { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseMySql("server=chambeapedb.mysql.database.azure.com;database=ChambeaPe;user=ChambeaPeUser;password=ConoCraft%69", ServerVersion.Parse("8.0.32-mysql"));
 
@@ -700,6 +702,27 @@ public partial class ChambeaPeContext : DbContext
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("Worker_User");
+        });
+
+        modelBuilder.Entity<Postulation>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+            entity.ToTable("postulations");
+            entity.Property(e => e.Id).HasColumnName("id").ValueGeneratedOnAdd();
+            entity.HasOne(p => p.Worker)
+                .WithMany(w => w.Postulations)
+                .HasForeignKey(p => p.WorkerId);
+            entity.HasOne(p => p.Post)
+                .WithMany(p => p.Postulations)
+                .HasForeignKey(p => p.PostId);
+            entity.Property(e => e.DateCreated)
+                .HasColumnType("datetime")
+                .HasColumnName("Date_created")
+                .HasDefaultValue(DateTime.Now);
+            entity.Property(e => e.DateUpdated)
+                .HasColumnType("datetime")
+                .HasColumnName("Date_updated");
+            entity.Property(e => e.IsActive).HasColumnName("is_active").HasDefaultValue(true);
         });
 
         OnModelCreatingPartial(modelBuilder);

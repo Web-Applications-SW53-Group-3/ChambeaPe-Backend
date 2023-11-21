@@ -43,6 +43,7 @@ namespace _1._API.Mapper
                 .ForMember(dest => dest.ProfilePic, opt => opt.MapFrom(src => src.User.ProfilePic));
             CreateMap<Post, PostResponse>()
                 .ForMember(dest => dest.PostId, opt => opt.MapFrom(src => src.Id));
+            CreateMap<Postulation, PostulationResponse>();
         }
     }
 }

@@ -16,6 +16,7 @@ public partial class Post : ModelBase
     public int EmployerId { get; set; }
 
     public virtual ICollection<Contract> Contracts { get; set; } = new List<Contract>();
+    public virtual ICollection<Postulation> Postulations { get; set; } = new List<Postulation>();
 
     public virtual Employer Employer { get; set; } = null!;
 }

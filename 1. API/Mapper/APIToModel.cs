@@ -25,6 +25,7 @@ namespace _1._API.Mapper
                 .ForMember(dest => dest.Contracts, opt => opt.Ignore())
                 .ForMember(dest => dest.Employer, opt => opt.Ignore())
                 .ForMember(dest => dest.Id, opt => opt.Ignore());
+            CreateMap<PostulationRequest, Postulation>();
         }
     }
 }

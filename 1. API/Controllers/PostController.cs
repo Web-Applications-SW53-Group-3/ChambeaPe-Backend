@@ -37,7 +37,7 @@ namespace _1._API.Controllers
         [AuthorizeFilter("W")]
         [HttpGet("[controller]")]
         [Produces("application/json")]
-        public async Task<ActionResult<List<Post>>> GetAll()
+        public async Task<ActionResult<List<PostResponse>>> GetAll()
         {
             try
             {
@@ -61,7 +61,7 @@ namespace _1._API.Controllers
         /// <exception cref="InvalidPostIDException"></exception>
         [HttpGet("[controller]/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<Post>> GetByPostId(int id)
+        public async Task<ActionResult<PostResponse>> GetByPostId(int id)
         {
             try
             {
@@ -93,7 +93,7 @@ namespace _1._API.Controllers
         [AuthorizeFilter("E")]
         [HttpGet("employer/{employerId}/[controller]")]
         [Produces("application/json")]
-        public async Task<ActionResult<List<Post>>> GetByEmployerId(int employerId)
+        public async Task<ActionResult<List<PostResponse>>> GetByEmployerId(int employerId)
         {
             try
             {

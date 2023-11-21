@@ -38,7 +38,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 723, DateTimeKind.Local).AddTicks(2906))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 842, DateTimeKind.Local).AddTicks(8639))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -167,7 +167,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 724, DateTimeKind.Local).AddTicks(2686))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 843, DateTimeKind.Local).AddTicks(6901))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -222,7 +222,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 724, DateTimeKind.Local).AddTicks(9593))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 844, DateTimeKind.Local).AddTicks(3208))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -264,7 +264,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 725, DateTimeKind.Local).AddTicks(5231))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 844, DateTimeKind.Local).AddTicks(8124))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -318,7 +318,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 726, DateTimeKind.Local).AddTicks(571))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 845, DateTimeKind.Local).AddTicks(2722))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -357,7 +357,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 726, DateTimeKind.Local).AddTicks(4287))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 845, DateTimeKind.Local).AddTicks(6063))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -400,7 +400,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 726, DateTimeKind.Local).AddTicks(7371))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 845, DateTimeKind.Local).AddTicks(8835))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -446,7 +446,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 726, DateTimeKind.Local).AddTicks(9262))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 846, DateTimeKind.Local).AddTicks(525))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -475,7 +475,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 727, DateTimeKind.Local).AddTicks(1435))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 846, DateTimeKind.Local).AddTicks(2321))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -515,7 +515,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 727, DateTimeKind.Local).AddTicks(5171))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 846, DateTimeKind.Local).AddTicks(5736))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -563,6 +563,45 @@ namespace _3._Data.Migrations
                     b.ToTable("posts", (string)null);
                 });
 
+            modelBuilder.Entity("_3._Data.Model.Postulation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("DateCreated")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime")
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 849, DateTimeKind.Local).AddTicks(9127))
+                        .HasColumnName("Date_created");
+
+                    b.Property<DateTime?>("DateUpdated")
+                        .HasColumnType("datetime")
+                        .HasColumnName("Date_updated");
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("tinyint(1)")
+                        .HasDefaultValue(true)
+                        .HasColumnName("is_active");
+
+                    b.Property<int>("PostId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WorkerId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id")
+                        .HasName("PRIMARY");
+
+                    b.HasIndex("PostId");
+
+                    b.HasIndex("WorkerId");
+
+                    b.ToTable("postulations", (string)null);
+                });
+
             modelBuilder.Entity("_3._Data.Model.Premium", b =>
                 {
                     b.Property<int>("Id")
@@ -573,7 +612,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 727, DateTimeKind.Local).AddTicks(8529))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 846, DateTimeKind.Local).AddTicks(8716))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -611,7 +650,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 728, DateTimeKind.Local).AddTicks(1400))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 847, DateTimeKind.Local).AddTicks(1169))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -669,7 +708,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 728, DateTimeKind.Local).AddTicks(6650))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 847, DateTimeKind.Local).AddTicks(5741))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -711,7 +750,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 729, DateTimeKind.Local).AddTicks(320))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 847, DateTimeKind.Local).AddTicks(9093))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -746,7 +785,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 729, DateTimeKind.Local).AddTicks(4577))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 848, DateTimeKind.Local).AddTicks(2623))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -799,7 +838,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 729, DateTimeKind.Local).AddTicks(9205))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 848, DateTimeKind.Local).AddTicks(6729))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -887,7 +926,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 730, DateTimeKind.Local).AddTicks(2700))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 848, DateTimeKind.Local).AddTicks(9689))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -932,7 +971,7 @@ namespace _3._Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
-                        .HasDefaultValue(new DateTime(2023, 11, 14, 19, 50, 36, 730, DateTimeKind.Local).AddTicks(7770))
+                        .HasDefaultValue(new DateTime(2023, 11, 21, 14, 58, 45, 849, DateTimeKind.Local).AddTicks(4245))
                         .HasColumnName("Date_created");
 
                     b.Property<DateTime?>("DateUpdated")
@@ -1093,6 +1132,25 @@ namespace _3._Data.Migrations
                     b.Navigation("Employer");
                 });
 
+            modelBuilder.Entity("_3._Data.Model.Postulation", b =>
+                {
+                    b.HasOne("_3._Data.Model.Post", "Post")
+                        .WithMany("Postulations")
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("_3._Data.Model.Worker", "Worker")
+                        .WithMany("Postulations")
+                        .HasForeignKey("WorkerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Post");
+
+                    b.Navigation("Worker");
+                });
+
             modelBuilder.Entity("_3._Data.Model.Review", b =>
                 {
                     b.HasOne("_3._Data.Model.Employer", "Employer")
@@ -1222,6 +1280,8 @@ namespace _3._Data.Migrations
             modelBuilder.Entity("_3._Data.Model.Post", b =>
                 {
                     b.Navigation("Contracts");
+
+                    b.Navigation("Postulations");
                 });
 
             modelBuilder.Entity("_3._Data.Model.Premium", b =>
@@ -1251,6 +1311,8 @@ namespace _3._Data.Migrations
                     b.Navigation("Contracts");
 
                     b.Navigation("Portfolios");
+
+                    b.Navigation("Postulations");
 
                     b.Navigation("Reviews");
 

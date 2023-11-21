@@ -25,6 +25,8 @@ using _3._Data.Model;
 using Owin.Security.AesDataProtectorProvider;
 using _1._API.Middleware;
 using _2._Domain.Token;
+using _3._Data.Postulations;
+using _2._Domain.Postulations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -84,6 +86,9 @@ builder.Services.AddScoped<IPostData, PostMySQLData>();
 builder.Services.AddScoped<IPostDomain, PostDomain>();
 
 builder.Services.AddScoped<ITokenDomain, TokenDomain>();
+
+builder.Services.AddScoped<IPostulationData, PostulationMySQLData>();
+builder.Services.AddScoped<IPostulationDomain, PostulationDomain>();
 
 var connectionString = builder.Configuration.GetConnectionString("ChambeaPeDB");
 builder.Services.AddDbContext<ChambeaPeContext>(

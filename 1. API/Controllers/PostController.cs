@@ -34,7 +34,7 @@ namespace _1._API.Controllers
         /// Get all posts
         /// </summary>
         /// <returns></returns>
-        [AuthorizeFilter("E")]
+        [AuthorizeFilter("W")]
         [HttpGet("[controller]")]
         [Produces("application/json")]
         public async Task<ActionResult<List<Post>>> GetAll()
@@ -90,6 +90,7 @@ namespace _1._API.Controllers
         /// </summary>
         /// <param name="employerId"></param>
         /// <returns></returns>
+        [AuthorizeFilter("E")]
         [HttpGet("employer/{employerId}/[controller]")]
         [Produces("application/json")]
         public async Task<ActionResult<List<Post>>> GetByEmployerId(int employerId)
@@ -116,6 +117,7 @@ namespace _1._API.Controllers
         /// <returns></returns>
         [HttpPost("employer/{employerId}/[controller]")]
         [Produces("application/json")]
+        [AuthorizeFilter("E")]
         public async Task<ActionResult> Post([FromBody] PostRequest postRequest, int employerId)
         {
             try
@@ -152,6 +154,7 @@ namespace _1._API.Controllers
         /// <returns></returns>
         [HttpPut("[controller]/{id}")]
         [Produces("application/json")]
+        [AuthorizeFilter("E")]
         public async Task<ActionResult> Put([FromBody] PostRequest postRequest, int id)
         {
             try
@@ -183,6 +186,7 @@ namespace _1._API.Controllers
         /// <returns></returns>
         [HttpDelete("[controller]/{id}")]
         [Produces("application/json")]
+        [AuthorizeFilter("E")]
         public async Task<ActionResult> Delete(int id)
         {
             try

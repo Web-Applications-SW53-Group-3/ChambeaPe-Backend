@@ -1,4 +1,5 @@
-﻿using _1._API.Request;
+﻿using _1._API.Filter;
+using _1._API.Request;
 using _2._Domain.Token;
 using _2._Domain.Users;
 using _3._Data.Users;
@@ -57,6 +58,7 @@ public class AccountController : Controller
 
     [HttpGet]
     [Route("/account/logout")]
+    [AuthorizeFilter()]
     public async Task<IActionResult> Logout()
     {
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);

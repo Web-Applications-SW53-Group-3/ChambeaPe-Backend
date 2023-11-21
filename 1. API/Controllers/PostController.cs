@@ -34,7 +34,7 @@ namespace _1._API.Controllers
         /// Get all posts
         /// </summary>
         /// <returns></returns>
-        [AuthorizeFilter("W")]
+        [AuthorizeFilter()]
         [HttpGet("[controller]")]
         [Produces("application/json")]
         public async Task<ActionResult<List<PostResponse>>> GetAll()

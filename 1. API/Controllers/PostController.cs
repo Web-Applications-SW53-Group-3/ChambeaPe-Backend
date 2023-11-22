@@ -117,7 +117,7 @@ namespace _1._API.Controllers
         /// <returns></returns>
         [HttpPost("employer/{employerId}/[controller]")]
         [Produces("application/json")]
-        [AuthorizeFilter("E")]
+        [AuthorizeFilter()]
         public async Task<ActionResult> Post([FromBody] PostRequest postRequest, int employerId)
         {
             try

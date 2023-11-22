@@ -23,12 +23,12 @@ namespace _2._Domain.Posts
         {
             Employer employer = await _employerData.GetByIdAsync(employerId);
             List<Post> employerPosts = await _postData.GetByEmployerIdAsync(employerId);
-            int timeCreationLimitHours = 24;
+            int timeCreationLimitHours = 1;
 
             foreach (var post in employerPosts)
             {
                 TimeSpan deltaTime = DateTime.Now - post.DateCreated;
-                if (deltaTime.TotalHours < timeCreationLimitHours)
+                if (deltaTime.TotalHours < 0.008)
                 {
                     throw new PostLimitExceededException($"A post have already been created in the " +
                         $"last {timeCreationLimitHours} hours by employer {employer.User.FirstName} {employer.User.LastName}. " +
